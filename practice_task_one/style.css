@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: #292929;
+}
+
+#app {
+  width: 100%;
+}
+
+.head-menu {
+  width: 15%;
+  max-width: 198px;
+  height: 850px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.head-menu_logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+.head-menu_nav {
+  width: 100%;
+  max-height: 300px;
+}
+.head-menu_nav_list {
+  width: 100%;
+  list-style-type: none;
+}
+.head-menu_nav_link {
+  font-family: var(--font-family);
+  color: #fff;
+  margin: 24px 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+.head-menu_info {
+  width: 100%;
+}
+.head-menu_info_phone {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 26px 0;
+  line-height: 19.5px;
+  color: #fff;
+  position: relative;
+  padding-left: 32px;
+}
+.head-menu_info_phone::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-image: url("./img/phone_icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.head-menu_info_email {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 26px 0;
+  line-height: 19.5px;
+  color: #fff;
+  position: relative;
+  padding-left: 32px;
+}
+.head-menu_info_email::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-image: url("./img/email_icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}/*# sourceMappingURL=style.css.map */
