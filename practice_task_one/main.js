@@ -176,10 +176,126 @@ let about_bitrix = `
 </div>
 `;
 
+let  how_we_work = `
+<div class = "how-we-work">
+  <h2 class = "how-we-work_title">Как мы работаем</h2>
+
+  <div class = "how-we-work_container">
+
+    <div class = "how-we-work_item">
+      <h3 class = "how-we-work_item_title">Предпроектный анализ</h3>
+      <p class = "how-we-work_item_text">Погружаемся в текущие бизнес-процессы, анализируем специфику вашей компании.</p>
+      <img class = "how-we-work_item_img" src = "./img/how_we_work_img_1.png" alt = "how we work img">
+      <img class = "how-we-work_item_number" src = "./img/number_1.png" alt = "number">
+    </div>
+
+    <div class = "how-we-work_item">
+      <h3 class = "how-we-work_item_title">Техническое задание</h3>
+      <p class = "how-we-work_item_text">Составляем список работ с описанием результата внедрения по каждому модулю.</p>
+      <img class = "how-we-work_item_img" src = "./img/how_we_work_img_2.png" alt = "how we work img">
+      <img class = "how-we-work_item_number" src = "./img/number_2.png" alt = "number">
+    </div>
+    
+    <div class = "how-we-work_item">
+      <h3 class = "how-we-work_item_title">Внедрение</h3>
+      <p class = "how-we-work_item_text">Настраиваем портал согласно составленному списку работ.</p>
+      <img class = "how-we-work_item_img" src = "./img/how_we_work_img_3.png" alt = "how we work img">
+      <img class = "how-we-work_item_number" src = "./img/number_3.png" alt = "number">
+    </div>
+    
+    <div class = "how-we-work_item">
+      <h3 class = "how-we-work_item_title">Тестирование</h3>
+      <p class = "how-we-work_item_text">Проверяем функционал на корректность настроек: отрабатываем сценарии автоматизации, проверяем интеграции с внешними системами.</p>
+      <img class = "how-we-work_item_img" src = "./img/how_we_work_img_4.png" alt = "how we work img">
+      <img class = "how-we-work_item_number" src = "./img/number_4.png" alt = "number">
+    </div>
+    
+    <div class = "how-we-work_item">
+      <h3 class = "how-we-work_item_title">Обучение</h3>
+      <p class = "how-we-work_item_text">Предоставляем обучающие материалы для сотрудников, обучаем работе с Битрикс24 в выбранном вами формате.</p>
+      <img class = "how-we-work_item_img" src = "./img/how_we_work_img_5.png" alt = "how we work img">
+      <img class = "how-we-work_item_number" src = "./img/number_5.png" alt = "number">
+    </div>
+    
+    <div class = "how-we-work_item">
+      <h3 class = "how-we-work_item_title">Техническая поддержка</h3>
+      <p class = "how-we-work_item_text">После внедрения оказываем услуги консалтинга и технической поддержки портала.</p>
+      <img class = "how-we-work_item_img" src = "./img/how_we_work_img_6.png" alt = "how we work img">
+      <img class = "how-we-work_item_number" src = "./img/number_6.png" alt = "number">
+    </div>
+  </div>
+</div>
+`;
+
+let rates = `
+<div class = "rates">
+  <div class = "rates_buttons">
+    <button class = "rates_button rates_button_active">Тарифы на обслуживание</button>
+    <button class = "rates_button">Тарифы на внедрение</button>
+  </div>
+
+  <div class = "rates_cards">
+
+    <div class = "rates_card">
+      <h2 class = "rates_card_title">Базовое внедрение</h2>
+      <h3 class = "rates_card_price">15 400 ₽</h3>
+      <p class = "rates_card_desc">На базе облачного тарифа Битрикс24 «Базовый»</p>
+      <ul class = "rates_card_list">
+        <li class = "rates_card_list_item"><span>Базовые настройки портала</span></li>
+        <li class = "rates_card_list_item"><span>Регистрация пользователей, формирование структуры компании</span></li>
+        <li class = "rates_card_list_item"><span>Подключение к порталу социальных сетей и мессенджеров</span></li>
+        <li class = "rates_card_list_item"><span>Настройка 1 воронки продаж</span></li>
+        <li class = "rates_card_list_item"><span>Импорт клиентской базы</span></li>
+        <li class = "rates_card_list_item"><span>Обучение ответстенного лица 1 час</span></li>
+      </ul>
+      <div class = "rates_card_button-wrap">
+        <button class = "button__transparent rates_card_button-wrap_button">Заказать тариф</button>
+      </div>
+    </div>
+
+    <div class = "rates_card">
+      <h2 class = "rates_card_title">Базовое внедрение</h2>
+      <h3 class = "rates_card_price">15 400 ₽</h3>
+      <p class = "rates_card_desc">На базе облачного тарифа Битрикс24 «Базовый»</p>
+      <ul class = "rates_card_list">
+        <li class = "rates_card_list_item"><span>Базовые настройки портала</span></li>
+        <li class = "rates_card_list_item"><span>Регистрация пользователей, формирование структуры компании</span></li>
+        <li class = "rates_card_list_item"><span>Подключение к порталу социальных сетей и мессенджеров</span></li>
+        <li class = "rates_card_list_item"><span>Настройка 1 воронки продаж</span></li>
+        <li class = "rates_card_list_item"><span>Импорт клиентской базы</span></li>
+        <li class = "rates_card_list_item"><span>Обучение ответстенного лица 1 час</span></li>
+      </ul>
+      <div class = "rates_card_button-wrap">
+        <button class = "button__transparent rates_card_button-wrap_button">Заказать тариф</button>
+      </div>
+    </div>
+
+    <div class = "rates_card">
+      <h2 class = "rates_card_title">Базовое внедрение</h2>
+      <h3 class = "rates_card_price">15 400 ₽</h3>
+      <p class = "rates_card_desc">На базе облачного тарифа Битрикс24 «Базовый»</p>
+      <ul class = "rates_card_list">
+        <li class = "rates_card_list_item"><span>Базовые настройки портала</span></li>
+        <li class = "rates_card_list_item"><span>Регистрация пользователей, формирование структуры компании</span></li>
+        <li class = "rates_card_list_item"><span>Подключение к порталу социальных сетей и мессенджеров</span></li>
+        <li class = "rates_card_list_item"><span>Настройка 1 воронки продаж</span></li>
+        <li class = "rates_card_list_item"><span>Импорт клиентской базы</span></li>
+        <li class = "rates_card_list_item"><span>Обучение ответстенного лица 1 час</span></li>
+      </ul>
+      <div class = "rates_card_button-wrap">
+        <button class = "button__transparent rates_card_button-wrap_button">Заказать тариф</button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 let app = `
   ${head_container}
   ${benefits}
   ${about_bitrix}
+  ${how_we_work}
+  ${rates}
 `
 
 document.querySelector('#app').innerHTML = app;
