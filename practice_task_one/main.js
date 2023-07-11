@@ -11,12 +11,12 @@ let head_menu = `
 
   <nav class = "head-menu_nav">
     <ul class = "head-menu_nav_list">
-      <li class = "head-menu_nav_link">Что такое Битрикс24</li>
-      <li class = "head-menu_nav_link">Как мы работаем</li>
-      <li class = "head-menu_nav_link">Тарифы</li>
-      <li class = "head-menu_nav_link">Наши компетенции</li>
-      <li class = "head-menu_nav_link">Кейсы</li>
-      <li class = "head-menu_nav_link">О нас</li>
+      <li><a class = "head-menu_nav_link" href = "">Что такое Битрикс24</a></li>
+      <li><a class = "head-menu_nav_link" href = "">Как мы работаем</a></li>
+      <li><a class = "head-menu_nav_link" href = "">Тарифы</a></li>
+      <li><a class = "head-menu_nav_link" href = "">Наши компетенции</a></li>
+      <li><a class = "head-menu_nav_link" href = "">Кейсы</a></li>
+      <li><a class = "head-menu_nav_link" href = "">О нас</a></li>
     </ul>
   </nav>
 

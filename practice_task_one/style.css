@@ -69,15 +69,17 @@ body {
 }
 
 .head-menu {
-  width: 100%;
-  height: 850px;
-  max-width: 198px;
+  height: 100vh;
+  width: 198px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
   margin-left: 40px;
   padding-top: 40px;
+}
+.head-menu svg {
+  width: 100%;
 }
 .head-menu__small {
   display: none;
@@ -96,6 +98,7 @@ body {
   list-style-type: none;
 }
 .head-menu_nav_link {
+  text-decoration: none;
   font-family: var(--font-family);
   color: #fff;
   margin: 24px 0;
@@ -157,7 +160,7 @@ body {
 
 .welcome {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: repeat(2, 1fr);
   width: 80%;
   margin-left: auto;
   margin-right: 0;
@@ -194,6 +197,7 @@ body {
 }
 .welcome_images_big-img {
   float: right;
+  width: 100%;
 }
 .welcome_images_smalls {
   position: absolute;
@@ -571,6 +575,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+  margin: 0 auto;
 }
 .competentions_competention_img-wrap_wrap-one {
   background-image: url(./img/competention_fancy_1.png);
@@ -586,6 +591,7 @@ body {
 }
 .competentions_competention_img {
   display: block;
+  width: 100%;
   margin: 0 auto;
   opacity: 1;
   transition: all 0.5s;
@@ -851,6 +857,7 @@ body {
   background-image: url(./img/footer_bg.png);
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-size: contain;
   height: 800px;
 }
 .footer_content {
@@ -941,6 +948,234 @@ body {
   margin: 0 15px;
 }
 
+@media (min-width: 1500px) and (max-width: 1900px) {
+  .head-menu {
+    margin-left: 20px;
+    width: 150px;
+  }
+  .head-menu_nav_link {
+    font-size: 14px;
+  }
+  .head-menu_info_phone {
+    font-size: 14px;
+  }
+  .head-menu_info_email {
+    font-size: 14px;
+  }
+  .welcome {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .welcome_images_smalls {
+    left: -30%;
+  }
+  .welcome_images_small {
+    width: 150px;
+    height: 150px;
+  }
+  .benefits_benefit {
+    min-height: 200px;
+  }
+  .benefits_benefit_img {
+    width: 100px;
+    height: 100px;
+  }
+  .how-we-work_container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .how-we-work_item_number {
+    height: 100px;
+    left: -100px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .rates_button {
+    font-size: 32px;
+  }
+  .rates_button_active {
+    font-size: 40px;
+  }
+  .rates_card {
+    width: 90%;
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .competentions {
+    width: 65%;
+  }
+  .competentions_competention_img-wrap {
+    width: 220px;
+    height: 220px;
+  }
+  .about-us_body_img {
+    width: 600px;
+  }
+  .audit_img {
+    width: 500px;
+  }
+  .cases_case_title {
+    font-size: 20px;
+  }
+  .cases_case_text {
+    font-size: 14px;
+  }
+  .clients_slider_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .clients_client:last-child {
+    display: none;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1350px) {
+  .head-menu {
+    margin-left: 20px;
+    width: 150px;
+  }
+  .head-menu_nav_link {
+    font-size: 12px;
+  }
+  .head-menu_info_phone {
+    padding-left: 20px;
+    font-size: 12px;
+  }
+  .head-menu_info_email {
+    padding-left: 20px;
+    font-size: 12px;
+  }
+  .welcome {
+    width: 85%;
+  }
+  .welcome_info_title {
+    font-size: 40px;
+  }
+  .welcome_images_smalls {
+    left: -15%;
+  }
+  .welcome_images_small {
+    width: 100px;
+    height: 100px;
+  }
+  .benefits_title {
+    font-size: 40px;
+  }
+  .benefits_benefit {
+    min-height: 150px;
+  }
+  .benefits_benefit_text {
+    width: 70%;
+    font-size: 14px;
+  }
+  .benefits_benefit_img {
+    width: 60px;
+    height: 60px;
+    right: 25px;
+  }
+  .benefits_footer_text {
+    font-size: 24px;
+  }
+  .benefits_footer_text b {
+    font-size: 32px;
+  }
+  .benefits_footer_img {
+    width: 150px;
+  }
+  .about-bitrix_title {
+    font-size: 40px;
+  }
+  .about-bitrix_container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 0 auto;
+  }
+  .how-we-work_title {
+    font-size: 40px;
+  }
+  .how-we-work_container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .how-we-work_item_number {
+    height: 100px;
+    left: -100px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .rates_title {
+    font-size: 40px;
+  }
+  .rates_card {
+    width: 95%;
+  }
+  .competentions_title {
+    font-size: 40px;
+  }
+  .competentions_competention_img-wrap {
+    width: 180px;
+    height: 180px;
+  }
+  .competentions_competention_text {
+    font-size: 10px;
+  }
+  .solutions_title {
+    font-size: 40px;
+  }
+  .solutions_subtitle {
+    font-size: 20px;
+  }
+  .solutions_body_info_title {
+    font-size: 14px;
+  }
+  .solutions_body_info_text {
+    font-size: 12px;
+  }
+  .solutions_body_info_button {
+    width: 50%;
+  }
+  .cases_title {
+    font-size: 40px;
+  }
+  .cases_case_title {
+    font-size: 20px;
+  }
+  .cases_case_text {
+    font-size: 12px;
+  }
+  .clients_title {
+    font-size: 40px;
+  }
+  .clients_slider_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .clients_client:last-child {
+    display: none;
+  }
+  .about-us_title {
+    font-size: 40px;
+  }
+  .about-us_marks {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .about-us_mark {
+    justify-content: start;
+  }
+  .about-us_body_img {
+    width: 400px;
+  }
+  .audit_title {
+    font-size: 40px;
+  }
+  .audit_container {
+    width: 100%;
+  }
+  .audit_img {
+    width: 400px;
+  }
+}
 @media (min-width: 360px) and (max-width: 500px) {
   .head-menu {
     display: none;
