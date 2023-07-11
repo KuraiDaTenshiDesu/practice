@@ -1,5 +1,9 @@
 import './style.css'
 import logo from './img/logo.svg?raw'
+import phone from './img/phone_icon.svg?raw'
+import client_one from './img/client_1.svg?raw'
+import client_two from './img/client_2.svg?raw'
+import client_three from './img/client_3.svg?raw'
 
 let head_menu = `
 <div class = "head-menu">
@@ -20,6 +24,27 @@ let head_menu = `
     <p class = "head-menu_info_phone">8-800-511-59-25</p>
     <p class = "head-menu_info_email">sales@palax.info</p>
   </div>
+</div>
+
+<div class = "head-menu__small">
+  <a class = "head-menu__small_menu-btn" id = "menu-btn">
+    <img class = "head-menu__small_menu-btn_img" id = "menu-icon" src = "./img/menu_icon.png">
+  </a>
+  ${logo}
+  ${phone}
+</div>
+
+<div class = "head-menu_popup">
+  <nav class = "head-menu_popup_nav">
+    <ul class = "head-menu_popup_nav_list">
+      <li class = "head-menu_popup_nav_link">Что такое Битрикс24</li>
+      <li class = "head-menu_popup_nav_link">Как мы работаем</li>
+      <li class = "head-menu_popup_nav_link">Тарифы</li>
+      <li class = "head-menu_popup_nav_link">Наши компетенции</li>
+      <li class = "head-menu_popup_nav_link">Кейсы</li>
+      <li class = "head-menu_popup_nav_link">О нас</li>
+    </ul>
+  </nav>
 </div>
 `;
 
@@ -43,13 +68,6 @@ let welcome = `
       <img class = "welcome_images_small" src = "./img/welcome_small_img_4.png" alt = "small-img">
     </div>
   </div>
-</div>
-`;
-
-let head_container = `
-<div class = "head-container">
-  ${head_menu}
-  ${welcome}
 </div>
 `;
 
@@ -290,12 +308,238 @@ let rates = `
 </div>
 `;
 
+let competentions = `
+<div class = "competentions">
+  <h2 class = "competentions_title">Наши компетенции</h2>
+  <div class = "competentions_container">
+
+    <div class = "competentions_competention">
+      <div class = "competentions_competention_img-wrap competentions_competention_img-wrap_wrap-one">
+        <img class = "competentions_competention_img" src = "./img/competention_1.png">
+      </div>
+      <p class = "competentions_competention_text">Выстраиваем эффективные воронки продаж. Автоматизируем работу с клиентом, освобождая время сотрудников от рутинных задач.</p>
+    </div>
+  
+    <div class = "competentions_competention">
+      <div class = "competentions_competention_img-wrap competentions_competention_img-wrap_wrap-two">
+        <img class = "competentions_competention_img" src = "./img/competention_2.png">
+      </div>
+      <p class = "competentions_competention_text">Создаем единую платформу для работы компании. Оцифровываем сложные бизнес-процессы, сокращая время согласований внутри компании в 3 раза.</p>
+    </div>
+  
+    <div class = "competentions_competention">
+      <div class = "competentions_competention_img-wrap competentions_competention_img-wrap_wrap-three">
+        <img class = "competentions_competention_img" src = "./img/competention_3.png">
+      </div>
+      <p class = "competentions_competention_text">Интегрируем CRM Битрикс24 с системой учета 1С, оптимизируя взаимодействие отдела продаж с бухгалтерией и складами. Объединяем работу всей компании.</p>
+    </div>
+  
+    <div class = "competentions_competention">
+      <div class = "competentions_competention_img-wrap competentions_competention_img-wrap_wrap-four">
+        <img class = "competentions_competention_img" src = "./img/competention_4.png">
+      </div>
+      <p class = "competentions_competention_text">Создаем единую платформу для работы компании. Оцифровываем сложные бизнес-процессы, сокращая время согласований внутри компании в 3 раза.</p>
+    </div>
+  </div>
+</div>
+`;
+
+let solutions = `
+<div class = "solutions">
+  <h2 class = "solutions_title">Наши решения для Битрикс24</h2>
+  <h3 class = "solutions_subtitle">Разрабатываем модули автоматизации</h3>
+
+  <div class = "solutions_body">
+    <img class = "solutions_body_img" src = "./img/solutions.png">
+    <div class = "solutions_body_info">
+      <h3 class = "solutions_body_info_title">Бизнес-процессы и роботы PALAX</h3>
+      <p class = "solutions_body_info_text">Neque vitae tempus quam pellentesque nec nam. Sit amet consectetur adipiscing elit. Sit amet tellus cras adipiscing enim eu turpis. Aenean euismod elementum nisi quis eleifend quam. Fringilla ut morbi tincidunt augue interdum velit. Vitae semper quis lectus nulla at volutpat diam. Lacus laoreet non curabitur gravida arcu. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis. Ipsum consequat nisl vel pretium lectus quam id. Aliquet sagittis id consectetur purus. Vel quam elementum pulvinar etiam non quam. Scelerisque in dictum non consectetur a erat. Nam at lectus urna duis convallis convallis tellus. Ornare suspendisse sed nisi lacus sed viverra. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Congue quisque egestas diam in arcu. Cursus vitae congue mauris rhoncus aenean vel.</p>
+      <button class = "solutions_body_info_button button__blue-green">Подробнее</button>
+    </div>
+  </div>
+</div>
+`;
+
+let cases = `
+<div class = "cases">
+  <h2 class = "cases_title">Наши кейсы</h2>
+  <div class = "cases_container">
+
+    <div class = "cases_case">
+      <h3 class = "cases_case_title">Кейс № 1</h3>
+      <p class = "cases_case_text">Внедрение Битрикс24 в производство</p>
+      <img class = "cases_case_preview" src = "./img/case_preview.png">
+    </div>
+  
+    <div class = "cases_case">
+      <h3 class = "cases_case_title">Кейс № 2</h3>
+      <p class = "cases_case_text">Внедрение Б24 в продажи</p>
+      <img class = "cases_case_preview" src = "./img/case_preview.png">
+    </div>
+  
+    <div class = "cases_case">
+      <h3 class = "cases_case_title">Кейс № 3</h3>
+      <p class = "cases_case_text">Внедрение Б24 для автошколы</p>
+      <img class = "cases_case_preview" src = "./img/case_preview.png">
+    </div>
+  </div>
+</div>
+`;
+
+let clients = `
+<div class = "clients">
+  <h2 class = "clients_title">Наши клиенты</h2>
+  <div class = "clients_slider">
+    <a class = "clients_slider_arrow clients_slider_arrow__left">
+      <img src = "./img/slider_arrow_left.png">
+    </a>
+    <a class = "clients_slider_arrow clients_slider_arrow__right">
+      <img src = "./img/slider_arrow_right.png">
+    </a>
+    <div class = "clients_slider_container">
+
+      <div class = "clients_client">
+        ${client_one}
+      </div>
+    
+      <div class = "clients_client">
+        ${client_two}
+      </div>
+    
+      <div class = "clients_client">
+        ${client_three}
+      </div>
+    
+      <div class = "clients_client">
+        ${client_one}
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+let about_us = `
+<div class = "about-us">
+  <h2 class = "about-us_title">О нас</h2>
+  <div class = "about-us_marks">
+
+    <div class = "about-us_mark">
+      <img class = "about-us_mark_img" src = "./img/mark_1.png">
+      <p class = "about-us_mark_text">На рынке с 2006 года</p>
+    </div>
+  
+    <div class = "about-us_mark">
+      <img class = "about-us_mark_img" src = "./img/mark_2.png">
+      <p class = "about-us_mark_text">Более 25 специалистов в команде</p>
+    </div>
+  
+    <div class = "about-us_mark">
+      <img class = "about-us_mark_img" src = "./img/mark_3.png">
+      <p class = "about-us_mark_text">Все сотрудники в штате (не фриланс)</p>
+    </div>
+  
+    <div class = "about-us_mark">
+      <img class = "about-us_mark_img" src = "./img/mark_4.png">
+      <p class = "about-us_mark_text">Один из лидеров рейтинга вeб-студий</p>
+    </div>
+  </div>
+
+  <div class = "about-us_body">
+    <img class = "about-us_body_img" src = "./img/about_us_img.png">
+    <div class = "about-us_body_info">
+      <p class = "about-us_body_info_text">Neque vitae tempus quam pellentesque nec nam. Sit amet consectetur adipiscing elit. Sit amet tellus cras adipiscing enim eu turpis. Aenean euismod elementum nisi quis eleifend quam. Fringilla ut morbi tincidunt augue interdum velit. Vitae semper quis lectus nulla at volutpat diam. Lacus laoreet non curabitur gravida arcu. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis. Ipsum consequat nisl vel pretium lectus quam id. Aliquet sagittis id consectetur purus. Vel quam elementum pulvinar etiam non quam. Scelerisque in dictum non consectetur a erat. Nam at lectus urna duis convallis convallis tellus. Ornare suspendisse sed nisi lacus sed viverra. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Congue quisque egestas diam in arcu. Cursus vitae congue mauris rhoncus aenean vel.</p>
+      <button class = "button__blue-green about-us_body_info_button">Подробнее</button>
+    </div>
+  </div>
+</div>
+`;
+
+let audit = `
+<div class = "audit">
+  <div class = "audit_container">
+    <h2 class = "audit_title">Хочу бесплатный аудит моего портала</h2>
+    <form class = "audit_form">
+      <input type = "text" class = "audit_form_input" placeholder = "Имя">
+      <input type = "number" class = "audit_form_input" placeholder = "+7(___)___-__-__">
+      <input type = "email" class = "audit_form_input" placeholder = "Email">
+      <button class = "button__blue-green audit_form_button">Отправить</button>
+      
+    </form>
+  </div>
+  <img class = "audit_img" src = "./img/audit_img.png">
+</div>
+`;
+
+let footer = `
+<footer class = "footer">
+  <div class = "footer_content">
+    <div class = "footer_services">
+      <h3 class = "footer_services_title">Услуги</h3>
+      <p class = "footer_services_service">Разработка сайтов</p>
+      <p class = "footer_services_service">Обслуживание сайта</p>
+      <p class = "footer_services_service">Продвижение SEO</p>
+      <p class = "footer_services_service">Реклама в интернете</p>
+      <p class = "footer_services_service">Аудит</p>
+      <p class = "footer_services_service">Регистрация и продление доменов</p>
+      <p class = "footer_services_service">Хостинг</p>
+      <p class = "footer_services_service">SSL-сертификат</p>
+      <p class = "footer_services_service">Защита персональных данных</p>
+    </div>
+
+    <div class = "footer_about-us">
+      <h3 class = "footer_about-us_title">О нас</h3>
+      <p class = "footer_about-us_info">О компании</p>
+      <p class = "footer_about-us_info">Блог</p>
+      <p class = "footer_about-us_info">Вакансии</p>
+      <p class = "footer_about-us_info">Контакты</p>
+    </div>
+
+    <div class = "footer_different">
+      <div class = "footer_different_info">
+        <p class = "footer_different_info_title">Портфолио</p>
+        <p class = "footer_different_info_title">Отзывы</p>
+      </div>
+
+      <div class = "footer_different_social">
+        <img class = "footer_different_social_img" src = "./img/vk_icon.png">
+        <img class = "footer_different_social_img" src = "./img/tg_icon.png">
+      </div>
+    </div>
+
+    
+    <p class = "footer_content_policy">Политика конфиденциальности</p>
+    <p class = "footer_content_trademark">2006 - 2022 © PALAX ®<br>Создание и продвижение сайтов</p>
+  </div>
+</footer>
+`;
+
 let app = `
-  ${head_container}
+  ${head_menu}
+  ${welcome}
   ${benefits}
   ${about_bitrix}
   ${how_we_work}
   ${rates}
+  ${competentions}
+  ${solutions}
+  ${cases}
+  ${clients}
+  ${about_us}
+  ${audit}
+  ${footer}
 `
 
 document.querySelector('#app').innerHTML = app;
+
+document.getElementById("menu-btn").addEventListener('click', () => {
+  let popup = document.querySelector('.head-menu_popup');
+  let icon = document.getElementById('menu-icon');
+
+  popup.classList.toggle('head-menu_popup__active');
+
+  if (popup.classList.contains('head-menu_popup__active')) {
+    icon.src = './img/close_icon.png';
+  } else {
+    icon.src = './img/menu_icon.png';
+  }
+})
