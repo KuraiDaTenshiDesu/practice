@@ -822,6 +822,7 @@ body {
         position: relative;
 
         &_container {
+            min-height: 100px;
             width: 90%;
             margin: 0 auto;
             display: grid;
@@ -848,6 +849,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 100%;
     }
 }
 
@@ -1905,7 +1907,7 @@ body {
             margin-bottom: 50px;
 
             &_container {
-                display: block;
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
@@ -2539,7 +2541,9 @@ body {
             margin-bottom: 50px;
 
             &_container {
-                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
 
@@ -3171,7 +3175,9 @@ body {
             margin-bottom: 50px;
 
             &_container {
-                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
 

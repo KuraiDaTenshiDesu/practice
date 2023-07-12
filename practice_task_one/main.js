@@ -409,9 +409,29 @@ let clients = `
       <div class = "clients_client">
         ${client_three}
       </div>
-    
+
       <div class = "clients_client">
         ${client_one}
+      </div>
+    
+      <div class = "clients_client">
+        ${client_two}
+      </div>
+    
+      <div class = "clients_client">
+        ${client_three}
+      </div>
+
+      <div class = "clients_client">
+        ${client_one}
+      </div>
+    
+      <div class = "clients_client">
+        ${client_two}
+      </div>
+    
+      <div class = "clients_client">
+        ${client_three}
       </div>
     </div>
   </div>
@@ -531,6 +551,9 @@ let app = `
 
 document.querySelector('#app').innerHTML = app;
 
+
+// POPUP
+
 document.getElementById("menu-btn").addEventListener('click', () => {
   let popup = document.querySelector('.head-menu_popup');
   let icon = document.getElementById('menu-icon');
@@ -548,7 +571,88 @@ document.querySelector('.head-menu_popup_nav_list').addEventListener('click', (e
   if (e.target.tagName === 'A') {
     document.querySelector('.head-menu_popup').classList.remove('head-menu_popup__active');
     document.getElementById('menu-icon').src = './img/menu_icon.png';
-  } else {
-    console.log(e.target.tagName);
   }
 })
+
+// SLIDER
+
+let slide = 0;
+let cols = getContainerColsCount();
+
+
+document.querySelector('.clients_slider_arrow__left').addEventListener('click', () => {
+  showSlides(slide -= 1);
+})
+
+document.querySelector('.clients_slider_arrow__right').addEventListener('click', () => {
+  showSlides(slide += 1);
+})
+
+
+showSlides(slide);
+
+window.addEventListener('resize', () => {
+  cols = getContainerColsCount();
+});
+
+function getContainerColsCount() {
+  let slider_container = document.querySelector('.clients_slider_container');
+  let cols = getComputedStyle(slider_container);
+
+  if (cols.getPropertyValue("display") === 'flex') {
+    return 1;
+  }
+
+  cols = cols.getPropertyValue("grid");
+  cols = cols.split(' / ');
+  cols = cols[1].split(' ');
+  return cols.length;
+}
+
+function getSlideIndex(index) {
+  let slides = document.querySelectorAll(".clients_client");
+
+  if (index >= slides.length) {
+    index = 0;
+    slide = index - 1;
+  }
+
+  if (index < 0) {
+    index = slides.length - 1;
+    slide = index;
+  }
+
+  console.log(`Changed slide var: ${slide}`);
+  return index;
+}
+
+function showSlides(slide) {
+  let slides = document.querySelectorAll(".clients_client");
+  console.log(`${(slide)}:${(slide + 1)}:${(slide + 2)}:${(slide + 3)} || ${getSlideIndex(slide)}:${getSlideIndex(slide + 1)}:${getSlideIndex(slide + 2)}:${getSlideIndex(slide + 3)}`);
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  // if (cols === 1) {
+  //   slides[getSlideIndex(slide)].style.display = 'flex';
+  // }
+
+  // if (cols === 2) {
+  //   slides[getSlideIndex(slide)].style.display = 'flex';
+  //   slides[getSlideIndex(slide + 1)].style.display = 'flex';
+  // }
+
+  // if (cols === 3) {
+  //   slides[getSlideIndex(slide)].style.display = 'flex';
+  //   slides[getSlideIndex(slide + 1)].style.display = 'flex';
+  //   slides[getSlideIndex(slide + 2)].style.display = 'flex';
+  // }
+
+  if (cols === 4) {
+    slides[getSlideIndex(slide)].style.display = 'flex';
+    slides[getSlideIndex(slide + 1)].style.display = 'flex';
+    slides[getSlideIndex(slide + 2)].style.display = 'flex';
+    slides[getSlideIndex(slide + 3)].style.display = 'flex';
+  }
+
+}

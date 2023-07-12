@@ -708,6 +708,7 @@ body {
   position: relative;
 }
 .clients_slider_container {
+  min-height: 100px;
   width: 90%;
   margin: 0 auto;
   display: grid;
@@ -729,6 +730,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 .about-us {
@@ -1518,7 +1520,7 @@ body {
     margin-bottom: 50px;
   }
   .clients_slider_container {
-    display: block;
+    grid-template-columns: repeat(2, 1fr);
   }
   .clients_client {
     display: none;
@@ -2044,7 +2046,9 @@ body {
     margin-bottom: 50px;
   }
   .clients_slider_container {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .clients_client {
     display: none;
@@ -2568,7 +2572,9 @@ body {
     margin-bottom: 50px;
   }
   .clients_slider_container {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .clients_client {
     display: none;
