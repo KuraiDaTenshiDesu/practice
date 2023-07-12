@@ -11,12 +11,12 @@ let head_menu = `
 
   <nav class = "head-menu_nav">
     <ul class = "head-menu_nav_list">
-      <li><a class = "head-menu_nav_link" href = "">Что такое Битрикс24</a></li>
-      <li><a class = "head-menu_nav_link" href = "">Как мы работаем</a></li>
-      <li><a class = "head-menu_nav_link" href = "">Тарифы</a></li>
-      <li><a class = "head-menu_nav_link" href = "">Наши компетенции</a></li>
-      <li><a class = "head-menu_nav_link" href = "">Кейсы</a></li>
-      <li><a class = "head-menu_nav_link" href = "">О нас</a></li>
+      <li><a class = "head-menu_nav_link" href = "#about-bitrix">Что такое Битрикс24</a></li>
+      <li><a class = "head-menu_nav_link" href = "#how-we-work">Как мы работаем</a></li>
+      <li><a class = "head-menu_nav_link" href = "#rates">Тарифы</a></li>
+      <li><a class = "head-menu_nav_link" href = "#competentions">Наши компетенции</a></li>
+      <li><a class = "head-menu_nav_link" href = "#cases">Кейсы</a></li>
+      <li><a class = "head-menu_nav_link" href = "#about-us">О нас</a></li>
     </ul>
   </nav>
 
@@ -37,12 +37,12 @@ let head_menu = `
 <div class = "head-menu_popup">
   <nav class = "head-menu_popup_nav">
     <ul class = "head-menu_popup_nav_list">
-      <li class = "head-menu_popup_nav_link">Что такое Битрикс24</li>
-      <li class = "head-menu_popup_nav_link">Как мы работаем</li>
-      <li class = "head-menu_popup_nav_link">Тарифы</li>
-      <li class = "head-menu_popup_nav_link">Наши компетенции</li>
-      <li class = "head-menu_popup_nav_link">Кейсы</li>
-      <li class = "head-menu_popup_nav_link">О нас</li>
+      <li><a class = "head-menu_popup_nav_link" href = "#about-bitrix">Что такое Битрикс24</a></li>
+      <li><a class = "head-menu_popup_nav_link" href = "#how-we-work">Как мы работаем</a></li>
+      <li><a class = "head-menu_popup_nav_link" href = "#rates">Тарифы</a></li>
+      <li><a class = "head-menu_popup_nav_link" href = "#competentions">Наши компетенции</a></li>
+      <li><a class = "head-menu_popup_nav_link" href = "#cases">Кейсы</a></li>
+      <li><a class = "head-menu_popup_nav_link" href = "#about-us">О нас</a></li>
     </ul>
   </nav>
 </div>
@@ -105,7 +105,7 @@ let benefits = `
 `;
 
 let about_bitrix = `
-<div class = "about-bitrix">
+<div class = "about-bitrix" id = "about-bitrix">
   <h2 class = "about-bitrix_title">Что такое Битрикс24?</h2>
   <div class = "about-bitrix_container">
 
@@ -194,8 +194,8 @@ let about_bitrix = `
 </div>
 `;
 
-let  how_we_work = `
-<div class = "how-we-work">
+let how_we_work = `
+<div class = "how-we-work" id = "how-we-work">
   <h2 class = "how-we-work_title">Как мы работаем</h2>
 
   <div class = "how-we-work_container">
@@ -246,7 +246,7 @@ let  how_we_work = `
 `;
 
 let rates = `
-<div class = "rates">
+<div class = "rates" id = "rates">
   <div class = "rates_buttons">
     <button class = "rates_button rates_button_active">Тарифы на обслуживание</button>
     <button class = "rates_button">Тарифы на внедрение</button>
@@ -309,7 +309,7 @@ let rates = `
 `;
 
 let competentions = `
-<div class = "competentions">
+<div class = "competentions" id = "competentions">
   <h2 class = "competentions_title">Наши компетенции</h2>
   <div class = "competentions_container">
 
@@ -361,7 +361,7 @@ let solutions = `
 `;
 
 let cases = `
-<div class = "cases">
+<div class = "cases" id = "cases">
   <h2 class = "cases_title">Наши кейсы</h2>
   <div class = "cases_container">
 
@@ -419,7 +419,7 @@ let clients = `
 `;
 
 let about_us = `
-<div class = "about-us">
+<div class = "about-us" id = "about-us">
   <h2 class = "about-us_title">О нас</h2>
   <div class = "about-us_marks">
 
@@ -541,5 +541,14 @@ document.getElementById("menu-btn").addEventListener('click', () => {
     icon.src = './img/close_icon.png';
   } else {
     icon.src = './img/menu_icon.png';
+  }
+})
+
+document.querySelector('.head-menu_popup_nav_list').addEventListener('click', (e) => {
+  if (e.target.tagName === 'A') {
+    document.querySelector('.head-menu_popup').classList.remove('head-menu_popup__active');
+    document.getElementById('menu-icon').src = './img/menu_icon.png';
+  } else {
+    console.log(e.target.tagName);
   }
 })
