@@ -36,7 +36,7 @@ let footer = `
 
     
     <p class = "footer_content_policy">Политика конфиденциальности</p>
-    <p class = "footer_content_trademark">2006 - 2022 © PALAX ®<br>Создание и продвижение сайтов</p>
+    <p class = "footer_content_trademark">2006 - <span id = "year"></span> © PALAX ®<br>Создание и продвижение сайтов</p>
   </div>
 </footer>
 `;

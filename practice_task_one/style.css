@@ -64,7 +64,6 @@ body {
 
 #app {
   width: 100%;
-  overflow-x: hidden;
 }
 
 .head-menu {
@@ -119,6 +118,8 @@ body {
   margin: 26px 0;
   color: #fff;
   position: relative;
+  display: block;
+  text-decoration: none;
   padding-left: 32px;
 }
 .head-menu_info_phone::before {
@@ -142,6 +143,8 @@ body {
   margin: 26px 0;
   color: #fff;
   position: relative;
+  display: block;
+  text-decoration: none;
   padding-left: 32px;
 }
 .head-menu_info_email::before {
@@ -290,6 +293,7 @@ body {
   margin-bottom: 40px;
 }
 .about-bitrix_container {
+  gap: 45px 15px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -333,6 +337,7 @@ body {
 }
 .how-we-work_container {
   display: grid;
+  gap: 15px;
   grid-template-columns: repeat(3, 1fr);
 }
 .how-we-work_item {
@@ -365,7 +370,8 @@ body {
 .how-we-work_item_number {
   position: absolute;
   bottom: 0;
-  left: -125px;
+  height: 125px;
+  left: -110px;
 }
 
 .rates {
@@ -953,11 +959,14 @@ body {
     width: 100px;
     height: 100px;
   }
+  .how-we-work {
+    width: 80%;
+  }
   .how-we-work_container {
     grid-template-columns: repeat(2, 1fr);
     width: 90%;
     margin-left: auto;
-    margin-right: 0;
+    margin-right: auto;
   }
   .how-we-work_item_number {
     height: 100px;
@@ -998,6 +1007,9 @@ body {
   }
   .clients_client {
     flex: 0 0 33.33%;
+  }
+  .about-bitrix_container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1100px) and (max-width: 1499px) {
@@ -1089,12 +1101,18 @@ body {
   .competentions_title {
     font-size: 40px;
   }
+  .competentions_container {
+    gap: 10px;
+  }
   .competentions_competention_img-wrap {
-    width: 180px;
-    height: 180px;
+    width: 100%;
+    height: 100%;
   }
   .competentions_competention_text {
     font-size: 10px;
+  }
+  .competentions_competention:hover .competentions_competention_text {
+    bottom: -120px;
   }
   .about-us_title {
     font-size: 40px;
@@ -1147,6 +1165,9 @@ body {
   }
   .clients_client {
     flex: 0 0 33.33%;
+  }
+  .about-bitrix_container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 800px) and (max-width: 1099px) {
@@ -1580,7 +1601,7 @@ body {
     text-align: center;
   }
   .audit {
-    width: 80%;
+    width: 90%;
     display: block;
     margin-top: 80px;
   }
@@ -1593,7 +1614,7 @@ body {
     font-size: 24px;
   }
   .audit_form {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   .audit_img {
@@ -1861,7 +1882,7 @@ body {
   .how-we-work_item_img {
     width: 60px;
     height: 60px;
-    top: -30px;
+    top: 0;
     right: 0;
     left: auto;
   }
@@ -2159,7 +2180,7 @@ body {
     display: none;
   }
 }
-@media (min-width: 360px) and (max-width: 499px) {
+@media (max-width: 499px) {
   .head-menu {
     display: none;
   }
@@ -2379,7 +2400,7 @@ body {
   .how-we-work_item_img {
     width: 60px;
     height: 60px;
-    top: -30px;
+    top: 0;
     right: 0;
     left: auto;
   }

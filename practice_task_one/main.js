@@ -1,11 +1,14 @@
+import './reset.css';
 import './style.css';
 import app from './modules/app';
 import arrowClick from './modules/scripts/slider';
 import showPopup from './modules/scripts/show_popup';
 import closePopup from './modules/scripts/close_popup';
-
+import showCurrentYear from './modules/scripts/show_current_year';
 
 document.querySelector('#app').innerHTML = app;
+
+showCurrentYear();
 
 // POPUP EVENT LISTENERS
 

@@ -17,8 +17,8 @@ let head_menu = `
   </nav>
 
   <div class = "head-menu_info">
-    <p class = "head-menu_info_phone">8-800-511-59-25</p>
-    <p class = "head-menu_info_email">sales@palax.info</p>
+    <a class = "head-menu_info_phone" href = "tel:8-800-511-59-25">8-800-511-59-25</a>
+    <a class = "head-menu_info_email" href = "mailto:sales@palax.info">sales@palax.info</a>
   </div>
 </div>
 
