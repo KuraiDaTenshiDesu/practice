@@ -817,16 +817,21 @@ body {
     }
 
     &_slider {
+        margin: 0 auto;
         margin-top: 100px;
-        width: 100%;
+        width: 90%;
         position: relative;
+        white-space: nowrap;
+        overflow: hidden;
+        transition: all .5s;
 
         &_container {
             min-height: 100px;
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            display: flex;
+            position: relative;
+            transition: all .5s;
         }
 
         &_arrow {
@@ -834,6 +839,8 @@ body {
             top: 50%;
             cursor: pointer;
             transform: translate(0, -50%);
+            z-index: 50;
+            cursor: pointer;
 
             &__left {
                 left: 0;
@@ -846,10 +853,16 @@ body {
     }
     
     &_client {
-        display: flex;
+        display: inline-flex;
+        vertical-align: top;
         align-items: center;
         justify-content: center;
-        height: 100%;
+        flex: 0 0 25%;
+        min-width: 300px;
+
+        svg {
+            max-width: 80%;
+        }
     }
 }
 
@@ -1191,16 +1204,8 @@ body {
     }
 
     .clients {
-        &_slider {
-            &_container {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
         &_client {
-            &:last-child {
-                display: none;
-            }
+            flex: 0 0 33.33%;
         }
     }
 }
@@ -1431,16 +1436,8 @@ body {
             font-size: 40px;
         }
 
-        &_slider {
-            &_container {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
         &_client {
-            &:last-child {
-                display: none;
-            }
+            flex: 0 0 33.33%;
         }
     }
 }
@@ -1905,19 +1902,10 @@ body {
             width: 90%;
             margin: 0 auto;
             margin-bottom: 50px;
-
-            &_container {
-                grid-template-columns: repeat(2, 1fr);
-            }
         }
 
         &_client {
-            &:first-child {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            display: none;
+            flex: 0 0 50%;
         }
     }
 
@@ -2539,21 +2527,10 @@ body {
             width: 90%;
             margin: 0 auto;
             margin-bottom: 50px;
-
-            &_container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
         }
 
         &_client {
-            &:first-child {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            display: none;
+            flex: 0 0 100%;
         }
     }
 
@@ -3173,21 +3150,10 @@ body {
             width: 90%;
             margin: 0 auto;
             margin-bottom: 50px;
-
-            &_container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
         }
 
         &_client {
-            &:first-child {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            display: none;
+            flex: 0 0 100%;
         }
     }
 
