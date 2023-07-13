@@ -20,6 +20,7 @@ window.onload = () => {
 
 window.onresize = () => {
   slides_on_page = getSliderRows();
+  slide_width = slides[0].offsetWidth;
 }
 
 function arrowClick(direction) {
