@@ -2,7 +2,7 @@ import logo from './head_menu_icons/logo.svg?raw'
 import phone from './head_menu_icons/phone_icon.svg?raw'
 
 let head_menu = `
-<div class = "head-menu">
+<aside class = "head-menu">
   ${logo}
 
   <nav class = "head-menu_nav">
@@ -20,15 +20,15 @@ let head_menu = `
     <a class = "head-menu_info_phone" href = "tel:8-800-511-59-25">8-800-511-59-25</a>
     <a class = "head-menu_info_email" href = "mailto:sales@palax.info">sales@palax.info</a>
   </div>
-</div>
+</aside>
 
-<div class = "head-menu__small">
+<header class = "head-menu__small">
   <a class = "head-menu__small_menu-btn" id = "menu-btn">
     <img class = "head-menu__small_menu-btn_img" id = "menu-icon" src = "./img/menu_icon.png">
   </a>
   ${logo}
   ${phone}
-</div>
+</header>
 
 <div class = "head-menu_popup">
   <nav class = "head-menu_popup_nav">

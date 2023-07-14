@@ -1,0 +1,47 @@
+@mixin head-menu_info($url) {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 26px 0;
+    color: #fff;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding: {
+        left: 32px;
+    };
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        top: 50%;
+        transform: translate(0, -50%);
+        background-image: url($url);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+}
+
+@mixin button {
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 16px;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+@mixin welcome-buttons {
+    margin: 20px 0;
+    width: 100%;
+}

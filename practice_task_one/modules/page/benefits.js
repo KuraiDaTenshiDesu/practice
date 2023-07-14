@@ -1,5 +1,5 @@
 let benefits = `
-  <div class = "benefits">
+  <section class = "benefits">
     <h2 class = "benefits_title">Давайте по-честному</h2>
 
     <div class = "benefits_container">
@@ -28,7 +28,7 @@ let benefits = `
       <p class = "benefits_footer_text"><b>И самое главное:</b><br>вы теряете клиентов и прибыль</p>
       <img class = "benefits_footer_img" src = "./img/benefits_arrow.png" alt = "arrow">
     </div>
-  </div>
+  </section>
 `;
 
 export default benefits;

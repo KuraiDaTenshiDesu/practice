@@ -1,0 +1,100 @@
+@import './mixins';
+@import './roots';
+
+.competentions {
+    width: 70%;
+    margin: {
+        top: 200px;
+        left: auto;
+        right: auto;
+    };
+
+    &_title {
+        font-weight: 300;
+        font-size: 48px;
+        color: #fff;
+    }
+
+    &_container {
+        margin: {
+            left: auto;
+            right: auto;
+            top: 100px;
+        };
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &_competention {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+
+        &_img-wrap {
+            background-repeat: no-repeat;
+            position: relative;
+            background-position: center center;
+            background-size: contain;
+            margin: 0 auto;
+
+            &_wrap-one {
+                background-image: url(./img/competention_fancy_1.png);
+            }
+
+            &_wrap-two {
+                background-image: url(./img/competention_fancy_2.png);
+            }
+
+            &_wrap-three {
+                background-image: url(./img/competention_fancy_3.png);
+            }
+
+            &_wrap-four {
+                background-image: url(./img/competention_fancy_4.png);
+            }
+        }
+
+        &_circle {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all .5s;
+        }
+
+        &_img {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            opacity: 1;
+            transition: all .5s;
+        }
+
+        &_text {
+            position: absolute;
+            text-align: center;
+            font-size: 12.4px;
+            transition: all .5s;
+            color: transparent;
+            bottom: 50%;
+        }
+
+        &:hover {
+            .competentions_competention_text {
+                bottom: -100px;
+                color: #fff;
+            }
+
+            .competentions_competention_img {
+                opacity: 0;
+            }
+
+            .competentions_competention_circle {
+                top: 0px;
+                left: 0px;
+                transform: scale(1.25);
+            }
+        }
+    }
+}

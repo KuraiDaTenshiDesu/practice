@@ -7,7 +7,7 @@ let slider;
 let slides_on_page;
 let slide_width;
 
-window.onload = () => {
+window.addEventListener('DOMContentLoaded',() => {
   slides = document.querySelectorAll('.clients_client');
   length = slides.length;
   current = 0;
@@ -16,12 +16,12 @@ window.onload = () => {
   slide_width = slides[0].offsetWidth;
 
   slider.style.transform = `translate3d(0, 0, 0)`;
-}
+})
 
-window.onresize = () => {
+window.addEventListener('resize', () => {
   slides_on_page = getSliderRows();
   slide_width = slides[0].offsetWidth;
-}
+})
 
 function arrowClick(direction) {
   current += direction;

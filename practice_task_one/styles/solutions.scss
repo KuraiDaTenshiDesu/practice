@@ -1,0 +1,71 @@
+@import './mixins';
+@import './roots';
+
+.solutions {
+    width: 85%;
+    position: relative;
+    margin: {
+        top: 250px;
+        left: auto;
+        right: 0;
+    };
+    // background-image: url(./img/solutions_bg.png);
+    // background-repeat: no-repeat;
+    // background-position: bottom right 25px;
+
+    &_bg {
+        position: absolute;
+        bottom: 0;
+        right: 25px;
+        z-index: -1;
+    }
+
+    &_title {
+        color: #fff;
+        font-weight: 300;
+        font-size: 48px;
+    }
+
+    &_subtitle {
+        color: #fff;
+        font-weight: 700;
+        font-size: 24px;
+        margin-top: 40px;
+    }
+    
+    &_body {
+        display: grid;
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 40px;
+
+        &_img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        &_info {
+            width: 90%;
+            margin: 0 auto;
+
+            &_title {
+                color: #fff;
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            &_text {
+                font-weight: 400;
+                font-size: 14px;
+                color: #fff;
+                margin-top: 20px;
+            }
+
+            &_button {
+                margin-top: 40px;
+                width: 30%;
+                display: block;
+            }
+        }
+    }
+}

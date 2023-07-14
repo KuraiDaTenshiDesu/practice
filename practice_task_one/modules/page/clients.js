@@ -16,7 +16,7 @@ import client_fifteen from './clients_icons/client_15.svg?raw'
 import client_sixteen from './clients_icons/client_16.svg?raw'
 
 let clients = `
-<div class = "clients">
+<section class = "clients">
   <h2 class = "clients_title">Наши клиенты</h2>
   <div class = "clients_slider">
     <a class = "clients_slider_arrow clients_slider_arrow__left">
@@ -92,7 +92,7 @@ let clients = `
       </div>
     </div>
   </div>
-</div>
+</section>
 `;
 
 export default clients;

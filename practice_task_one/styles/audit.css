@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --blue-green-gradient: linear-gradient(225deg, #72F550 0%, #00A3FF 100%);
+  --blue-green-gradient-v2: linear-gradient(100.04deg, #00FF19 -7.48%, #001AFF 114.63%);
+  --dark-gray: #292929;
+  --light-gray: #4F4F4F;
+  --light-gray-v2: #404040;
+  --green: #A4E439 ;
+}
+
+.audit {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.audit_container {
+  width: 80%;
+}
+.audit_title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.audit_form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.audit_form_input {
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  outline: 0;
+  border: 0;
+  background: none;
+  border: 2px solid var(--light-gray);
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 25px;
+  transition: all 0.3s;
+}
+.audit_form_input:hover {
+  border-color: var(--green);
+}
+.audit_form_input:focus {
+  border-color: var(--green);
+}/*# sourceMappingURL=audit.css.map */

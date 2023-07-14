@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --blue-green-gradient: linear-gradient(225deg, #72F550 0%, #00A3FF 100%);
+  --blue-green-gradient-v2: linear-gradient(100.04deg, #00FF19 -7.48%, #001AFF 114.63%);
+  --dark-gray: #292929;
+  --light-gray: #4F4F4F;
+  --light-gray-v2: #404040;
+  --green: #A4E439 ;
+}
+
+.about-us {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+.about-us_title {
+  color: #fff;
+  font-weight: 300;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+.about-us_marks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.about-us_mark {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.about-us_mark_text {
+  width: 45%;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+}
+.about-us_body {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.about-us_body_slider {
+  display: flex;
+  transition: all 0.5s;
+}
+.about-us_body_slider-container {
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.about-us_body_info {
+  width: 80%;
+  margin: 0 auto;
+}
+.about-us_body_info_text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+}
+.about-us_body_info_button {
+  width: 40%;
+  display: block;
+}/*# sourceMappingURL=about-us.css.map */

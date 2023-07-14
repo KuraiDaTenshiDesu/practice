@@ -1,5 +1,5 @@
 let about_bitrix = `
-<div class = "about-bitrix" id = "about-bitrix">
+<section class = "about-bitrix" id = "about-bitrix">
   <h2 class = "about-bitrix_title">Что такое Битрикс24?</h2>
   <div class = "about-bitrix_container">
 
@@ -85,7 +85,7 @@ let about_bitrix = `
     </div>
 
   </div>
-</div>
+</section>
 `;
 
 export default about_bitrix;

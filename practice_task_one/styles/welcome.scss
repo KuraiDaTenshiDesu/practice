@@ -1,0 +1,66 @@
+@import './mixins';
+@import './roots';
+
+.welcome {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: {
+        left: auto;
+        right: 0;
+    };
+    padding-top: 120px;
+    height: 820px;
+
+    &_info {
+        width: 100%;
+        padding: 30px 0;
+
+        &_button {
+            width: 100%;
+            margin: 30px 0;
+        }
+
+        &_title {
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        &_subtitle {
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 30px;
+            font-weight: 700;
+            margin: 48px 0;
+        }
+
+        &_buttons {
+            width: 400px;
+        }
+    }
+
+    &_images {
+        width: 100%;
+        position: relative;
+
+        &_big-img {
+            float: right;
+            width: 100%;
+            max-width: 750px;
+        }
+
+        &_smalls {
+            position: absolute;
+            top: 430px;
+            left: -20%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        &_small {
+            margin: 0 20px;
+        }
+    }
+}

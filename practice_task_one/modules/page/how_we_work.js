@@ -1,5 +1,5 @@
 let how_we_work = `
-<div class = "how-we-work" id = "how-we-work">
+<section class = "how-we-work" id = "how-we-work">
   <h2 class = "how-we-work_title">Как мы работаем</h2>
 
   <div class = "how-we-work_container">
@@ -46,7 +46,7 @@ let how_we_work = `
       <img class = "how-we-work_item_number" src = "./img/number_6.png" alt = "number">
     </div>
   </div>
-</div>
+</section>
 `;
 
 export default how_we_work;

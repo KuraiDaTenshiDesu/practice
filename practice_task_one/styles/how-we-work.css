@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --blue-green-gradient: linear-gradient(225deg, #72F550 0%, #00A3FF 100%);
+  --blue-green-gradient-v2: linear-gradient(100.04deg, #00FF19 -7.48%, #001AFF 114.63%);
+  --dark-gray: #292929;
+  --light-gray: #4F4F4F;
+  --light-gray-v2: #404040;
+  --green: #A4E439 ;
+}
+
+.how-we-work {
+  width: 70%;
+  margin-top: 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.how-we-work_title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 300;
+}
+.how-we-work_container {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.how-we-work_item {
+  width: 70%;
+  position: relative;
+  margin-left: auto;
+  margin-top: 100px;
+}
+.how-we-work_item_title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  width: 80%;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+.how-we-work_item_text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+}
+.how-we-work_item_img {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  z-index: -1;
+}
+.how-we-work_item_number {
+  position: absolute;
+  bottom: 0;
+  height: 125px;
+  left: -110px;
+}/*# sourceMappingURL=how-we-work.css.map */

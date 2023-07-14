@@ -1,5 +1,5 @@
 let about_us = `
-<div class = "about-us" id = "about-us">
+<section class = "about-us" id = "about-us">
   <h2 class = "about-us_title">О нас</h2>
   <div class = "about-us_marks">
 
@@ -25,13 +25,20 @@ let about_us = `
   </div>
 
   <div class = "about-us_body">
-    <img class = "about-us_body_img" src = "./img/about_us_img.png">
+    <div class = "about-us_body_slider-container">
+      <div class = "about-us_body_slider">
+        <img class = "about-us_body_img" src = "./img/about_us_img.png">
+        <img class = "about-us_body_img" src = "./img/about_us_img.png">
+        <img class = "about-us_body_img" src = "./img/about_us_img.png">
+      </div>
+    </div>
+    
     <div class = "about-us_body_info">
       <p class = "about-us_body_info_text">Neque vitae tempus quam pellentesque nec nam. Sit amet consectetur adipiscing elit. Sit amet tellus cras adipiscing enim eu turpis. Aenean euismod elementum nisi quis eleifend quam. Fringilla ut morbi tincidunt augue interdum velit. Vitae semper quis lectus nulla at volutpat diam. Lacus laoreet non curabitur gravida arcu. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis. Ipsum consequat nisl vel pretium lectus quam id. Aliquet sagittis id consectetur purus. Vel quam elementum pulvinar etiam non quam. Scelerisque in dictum non consectetur a erat. Nam at lectus urna duis convallis convallis tellus. Ornare suspendisse sed nisi lacus sed viverra. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Congue quisque egestas diam in arcu. Cursus vitae congue mauris rhoncus aenean vel.</p>
-      <button class = "button__blue-green about-us_body_info_button">Подробнее</button>
+      <a href = "https://www.bitrix24.ru/partners/partner/1427158/" class = "button__blue-green about-us_body_info_button">Подробнее</a>
     </div>
   </div>
-</div>
+</section>
 `;
 
 export default about_us;

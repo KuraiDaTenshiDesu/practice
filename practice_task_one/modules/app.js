@@ -11,6 +11,7 @@ import clients from './page/clients'
 import about_us from './page/about_us'
 import audit from './page/audit'
 import footer from './page/footer'
+import popup from './page/popup'
 
 let app = `
   ${head_menu}
@@ -26,6 +27,7 @@ let app = `
   ${about_us}
   ${audit}
   ${footer}
+  ${popup}
 `;
 
 export default app;
