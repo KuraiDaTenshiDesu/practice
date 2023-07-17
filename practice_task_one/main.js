@@ -26,6 +26,7 @@ import editCardsContainer from './modules/scripts/edit_cards_container';
 import cardsSlider from './modules/scripts/cards_slider';
 import closePopups from './modules/scripts/close_popups';
 import aboutUsSlider from './modules/scripts/about_us_slider';
+import validatePhone from './modules/scripts/validate_phone';
 
 document.querySelector('#app').innerHTML = app;
 
@@ -64,6 +65,10 @@ document.querySelector('.cases_container').addEventListener('click', (event) => 
 // ABOUT US SLIDER
 
 setInterval(() => {aboutUsSlider()}, 3000);
+
+// PHONE VALIDATION EVENT LISTENERS
+
+document.getElementById('phone').addEventListener('input', () => {validatePhone()})
 
 // CLOSE POPUPS EVENT LISTENER
 

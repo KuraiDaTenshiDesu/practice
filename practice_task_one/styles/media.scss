@@ -404,6 +404,26 @@
                 width: 13px;
                 height: 24px;
             }
+
+            &_menu-btn {
+                background-image: url('./img/close_icon.png');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 0;
+                transition: all .5s;
+
+                & img {
+                    transition: all .5s;
+                }
+
+                &__active {
+                    background-size: contain;
+
+                    & img {
+                        opacity: 0;
+                    }
+                }
+            }
         }
 
         &_popup {

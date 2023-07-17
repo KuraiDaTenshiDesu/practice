@@ -266,6 +266,22 @@
     width: 13px;
     height: 24px;
   }
+  .head-menu__small_menu-btn {
+    background-image: url("./img/close_icon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 0;
+    transition: all 0.5s;
+  }
+  .head-menu__small_menu-btn img {
+    transition: all 0.5s;
+  }
+  .head-menu__small_menu-btn__active {
+    background-size: contain;
+  }
+  .head-menu__small_menu-btn__active img {
+    opacity: 0;
+  }
   .head-menu_popup {
     display: none;
     position: fixed;

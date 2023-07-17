@@ -5,9 +5,9 @@ function showPopup() {
   popup.classList.toggle('head-menu_popup__active');
 
   if (popup.classList.contains('head-menu_popup__active')) {
-    icon.src = './img/close_icon.png';
+    document.querySelector('.head-menu__small_menu-btn').classList.add('head-menu__small_menu-btn__active')
   } else {
-    icon.src = './img/menu_icon.png';
+    document.querySelector('.head-menu__small_menu-btn').classList.remove('head-menu__small_menu-btn__active')
   }
 }
 
