@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --blue-green-gradient: linear-gradient(225deg, #72F550 0%, #00A3FF 100%);
+  --blue-green-gradient-v2: linear-gradient(100.04deg, #00FF19 -7.48%, #001AFF 114.63%);
+  --dark-gray: #292929;
+  --light-gray: #4F4F4F;
+  --light-gray-v2: #404040;
+  --green: #A4E439 ;
+}
+
+.head-menu {
+  height: 100vh;
+  width: 198px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  margin-left: 40px;
+  padding-top: 40px;
+}
+.head-menu svg {
+  width: 100%;
+}
+.head-menu__small {
+  display: none;
+}
+.head-menu_popup {
+  display: none;
+}
+.head-menu_logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+.head-menu_nav {
+  width: 100%;
+  max-height: 300px;
+}
+.head-menu_nav_list {
+  width: 100%;
+  list-style-type: none;
+}
+.head-menu_nav li {
+  margin: 24px 0;
+}
+.head-menu_nav_link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+}
+.head-menu_info {
+  width: 100%;
+}
+.head-menu_info_phone {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 26px 0;
+  color: #fff;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  padding-left: 32px;
+}
+.head-menu_info_phone::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-image: url("./img/phone_icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.head-menu_info_email {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 26px 0;
+  color: #fff;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  padding-left: 32px;
+}
+.head-menu_info_email::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-image: url("./img/email_icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}/*# sourceMappingURL=head-menu.css.map */

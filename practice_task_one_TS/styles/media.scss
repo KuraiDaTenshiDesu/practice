@@ -1,0 +1,2294 @@
+@import './mixins';
+@import './roots';
+
+@media (max-width: 1900px) {
+    .head-menu {
+        margin-left: 20px;
+        width: 150px;
+
+        &_nav {
+            &_link {
+                font-size: 14px;
+            }
+        }
+
+        &_info {
+            &_phone {
+                font-size: 14px;
+            }
+    
+            &_email {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .welcome {
+        &_images {
+    
+            &_smalls {
+                left: -30%;
+            }
+    
+            &_small {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+    }
+
+    .benefits {
+        &_benefit {
+            min-height: 200px;
+    
+            &_img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+
+    .how-we-work {
+        width: 80%;
+        &_container {
+            grid-template-columns: repeat(2, 1fr);
+            width: 90%;
+            margin: {
+                left: auto;
+                right: auto;
+            };
+        }
+
+        &_item {
+            &_number {
+                height: 100px;
+                left: -100px;
+                bottom: auto;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+    }
+
+    .rates {
+        &_button {
+            font-size: 32px;
+    
+            &_active {
+                font-size: 40px;
+            }
+        }
+
+        &_card-wrapper {
+            width: 90%;
+        }
+    }
+
+    .competentions {
+        width: 65%;
+
+        &_competention {
+            &_img-wrap {
+                width: 220px;
+                height: 220px;
+            }
+
+            &:hover {
+                .competentions_competention_circle {
+                    top: 0px;
+                    left: 0px;
+                    transform: scale(1.15);
+                }
+            }
+        }
+    }
+
+    .about-us {
+        &_body {
+            &_img {
+                width: 600px;
+            }
+        }
+    }
+
+    .audit {
+        &_img {
+            width: 500px;
+        }
+    }
+
+    .cases {
+        &_case {
+            &_title {
+                font-size: 20px;
+            }
+
+            &_text {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .clients {
+        &_client {
+            flex: 0 0 33.33%;
+        }
+    }
+
+    .about-bitrix {
+        &_container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 1499px) {
+    .head-menu {
+        margin-left: 20px;
+        width: 150px;
+
+        &_nav {
+            &_link {
+                font-size: 12px;
+            }
+        }
+
+        &_info {
+            &_phone {
+                padding-left: 20px;
+                font-size: 12px;
+            }
+    
+            &_email {
+                padding-left: 20px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .welcome {
+        width: 85%;
+        
+        &_info {
+            &_title {
+                font-size: 40px;
+            }
+        }
+    
+        &_images {
+    
+            &_smalls {
+                left: -15%;
+            }
+    
+            &_small {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+    }
+
+    .benefits {
+        
+        &_title {
+            font-size: 40px;
+        }
+
+        &_benefit {
+            min-height: 150px;
+
+            &_text {
+                width: 70%;
+                font-size: 14px;
+            }
+    
+            &_img {
+                width: 60px;
+                height: 60px;
+                right: 25px;
+            }
+        }
+
+        &_footer {
+            &_text {
+                b {
+                    font-size: 32px;
+                }
+                font-size: 24px;
+            }
+
+            &_img {
+                width: 150px;
+            }
+        }
+    }
+
+    .how-we-work {
+        &_container {
+            grid-template-columns: repeat(2, 1fr);
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &_item {
+            &_number {
+                height: 100px;
+                left: -100px;
+                bottom: auto;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+        
+        &_title {
+            font-size: 40px;
+        }
+    }
+
+    .rates {
+        &_title {
+            font-size: 40px;
+        }
+
+        &_button {
+            font-size: 32px;
+    
+            &_active {
+                font-size: 40px;
+            }
+        }
+
+        &_card-wrapper {
+            width: 95%;
+        }
+    }
+
+    .competentions {
+        width: 65%;
+
+        &_title {
+            font-size: 40px;
+        }
+
+        &_container {
+            gap: 10px;
+        }
+
+        &_competention {
+            &_img-wrap {
+                width: 100%;
+                height: 100%;
+            }
+
+            &_text {
+                font-size: 10px;
+            }
+
+            &:hover {
+                .competentions_competention_text {
+                    bottom: -120px;
+                }
+            }
+        }
+    }
+
+    .about-us {
+        &_title {
+            font-size: 40px;
+        }
+
+        &_marks {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        &_mark {
+            justify-content: start;
+        }
+
+        &_body {
+            &_img {
+                width: 400px;
+            }
+        }
+    }
+    
+    .solutions {
+        &_title {
+            font-size: 40px;
+        }
+
+        &_subtitle {
+            font-size: 20px;
+        }
+
+        &_body {
+            &_info {
+                &_title {
+                    font-size: 14px;
+                }
+                &_text {
+                    font-size: 12px;
+                }
+                &_button {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .audit {
+        &_title {
+            font-size: 40px;
+        }
+
+        &_container {
+            width: 100%;
+        }
+
+        &_img {
+            width: 400px;
+        }
+    }
+
+    .cases {
+        &_title {
+            font-size: 40px;
+        }
+
+        &_case {
+            &_title {
+                font-size: 20px;
+            }
+
+            &_text {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .clients {
+        &_title {
+            font-size: 40px;
+        }
+
+        &_client {
+            flex: 0 0 33.33%;
+        }
+    }
+
+    .about-bitrix {
+        &_container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 1099px) {
+    .head-menu {
+        display: none;
+
+        &__small {
+            position: fixed;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 20px;
+            height: 70px;
+            z-index: 1001;
+            background-image: linear-gradient(rgba(#000, 1), rgba(#000, 0));
+
+            &_icon {
+                width: 13px;
+                height: 24px;
+            }
+
+            &_menu-btn {
+                background-image: url('./img/close_icon.png');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 0;
+                transition: all .5s;
+
+                & img {
+                    transition: all .5s;
+                }
+
+                &__active {
+                    background-size: contain;
+
+                    & img {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+
+        &_popup {
+            display: none;
+            position: fixed;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            padding-top: 150px;
+            background: rgba($color: #292929, $alpha: .8);
+            width: 30%;
+            z-index: 1000;
+
+            &__active {
+                display: block;
+            }
+
+            &_nav {
+                width: 100%;
+                max-height: 300px;
+        
+                &_list {
+                    width: 100%;
+                    list-style-type: none;
+                }
+
+                & li {
+                    margin: 24px 0;
+                    text-align: center;
+        
+                }
+        
+                &_link {
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .welcome {
+        width: 90%;
+        margin: 0 auto;
+        
+        &_info {
+            width: 80%;
+
+            &_buttons {
+                width: 100%;
+            }
+
+            &_title {
+                font-size: 30px;
+            }
+
+            &_subtitle {
+                font-size: 24px;
+            }
+        }
+    
+        &_images {
+    
+            &_smalls {
+                left: -10%;
+                gap: 10px;
+            }
+    
+            &_small {
+                margin: 0;
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+    }
+
+    .benefits {
+        width: 100%;
+        margin-top: 60px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        &_container {
+
+            width: 100%;
+        }
+
+        &_benefit {
+            width: 80%;
+            min-height: 90px;
+            margin: {
+                top: 15px !important;
+                bottom: 15px !important;
+                left: auto;
+                right: auto;
+            };
+
+            &_text {
+                font-weight: 400;
+                font-size: 12px;
+                width: 80%;
+                left: -20px;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+
+            &_img {
+                width: 60px;
+                height: 60px;
+                right: -20px;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+
+        &_footer {
+            width: 90%;
+            margin: 0 auto;
+
+            &_text {
+                font-weight: 400;
+                font-size: 16px;
+
+                & b {
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+            }
+            &_img {
+                width: 110px;
+                height: 66px;
+            }
+        }
+    }
+
+    .about-bitrix {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        &_container {
+            grid-template-columns: repeat(2, 1fr);
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &_item {
+            width: 100%;
+
+            &_title {
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            &_text {
+                font-weight: 400;
+                font-size: 12px;
+            }
+
+            &_list-item {
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .how-we-work {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        &_container {
+            grid-template-columns: repeat(2, 1fr);
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &_item {
+            width: 85%;
+            margin: {
+                right: 0;
+                left: auto;
+                top: 0;
+                bottom: 20px;
+            };
+
+            &_title {
+                font-weight: 700;
+                font-size: 14px;
+                margin: 0;
+                margin-bottom: 30px;
+            }
+
+            &_text {
+                font-weight: 400;
+                font-size: 12px;
+            }
+
+            &_img {
+                width: 60px;
+                height: 60px;
+                top: -30px;
+                right: 0;
+                left: auto;
+            }
+
+            &_number {
+                left: -50px;
+                height: 50px;
+                bottom: auto;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+    }
+
+    .rates {
+        width: 100%;
+        margin-top: 80px;
+
+        &_buttons {
+            width: 95%;
+            margin: {
+                left: auto;
+                right: auto;
+            };
+        }
+
+        &_button {
+            font-weight: 300;
+            font-size: 18px;
+            text-align: left;
+            width: 40%;
+
+            &_active {
+                font-weight: 400;
+                font-size: 18px;
+                text-align: left;
+            }
+        }
+
+        &_cards {
+            width: 100%;
+        }
+
+        &_card-wrapper {
+            width: 95%;
+            margin-bottom: 30px;
+        }
+
+        &_card {
+            &_title {
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            &_price {
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            &_desc {
+                font-weight: 700;
+                font-size: 12px;
+            }
+
+            &_button-wrap {
+                z-index: 100;
+                &_button {
+                    background: #A4E439;
+                    color: #000;
+                    z-index: 100;
+                }
+            }
+        }
+    }
+
+    .competentions {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        &_container {
+            grid-template-columns: repeat(2, 1fr);
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &_competention {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+
+            &_img-wrap {
+                width: 210px;
+                height: 210px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+
+            &_img {
+                opacity: 0;
+            }
+
+            &_text {
+                position: static;
+                color: #fff;
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .solutions {
+        width: 100%;
+        // background-position: center bottom;
+        // background-size: contain;
+        margin-top: 80px;
+
+        &_bg {
+            bottom: -125px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        &_subtitle {
+            font-weight: 700;
+            font-size: 14px;
+            text-align: center;
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        &_body {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+
+            &_img {
+                width: 80%;
+                display: block;
+                margin: 0 auto;
+            }
+
+            &_info {
+                &_title {
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 12px;
+                    margin: 20px 0;
+                }
+
+                &_text {
+                    font-weight: 400;
+                    font-size: 12px;
+                    text-align: center;
+                }
+
+                &_button {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .cases {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        &_container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &_case {
+            width: 100%;
+            margin-bottom: 20px;
+
+            &_title {
+                font-weight: 700;
+                font-size: 14px;
+            }
+
+            &_text {
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .clients {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        &_slider {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        &_client {
+            flex: 0 0 50%;
+        }
+    }
+
+    .about-us {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            text-align: center;
+            font-weight: 400;
+            font-size: 24px;
+            margin-bottom: 50px;
+        }
+
+        &_marks {
+            width: 90%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        &_mark {
+            display: block;
+
+            &_img {
+                width: 60px;
+                height: 60px;
+            }
+
+            &_text {
+                font-weight: 700;
+                font-size: 14px;
+            }
+        }
+
+        &_body {
+            width: 90%;
+            margin: 0 auto;
+            display: block;
+
+            &_img {
+                width: 100%;
+                object-fit: contain;
+            }
+
+            &_info {
+                width: 100%;
+
+                &_text {
+                    font-weight: 400;
+                    font-size: 12px;
+                    text-align: center;
+                }
+
+                &_button {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .audit {
+        width: 90%;
+        display: block;
+        margin-top: 80px;
+
+        &_container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &_title {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        &_form {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        &_img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .footer {
+        height: auto;
+        margin: 0;
+        background-size: contain;
+        padding-bottom: 200px;
+
+        &_content {
+            display: block;
+            width: 100%;
+            height: 50%;
+
+            &_policy {
+                position: static;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
+            &_trademark {
+                position: static;
+                text-align: center;
+            }
+        }
+
+        &_services {
+            display: none;
+        }
+
+        &_about-us {
+            display: none;
+        }
+
+        &_different {
+            width: 50%;
+            margin: 0 auto;
+
+            &_social {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 80px;
+                margin-bottom: 40px;
+            }
+            &_info {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 799px) {
+    .head-menu {
+        display: none;
+
+        &__small {
+            position: fixed;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 20px;
+            height: 70px;
+            z-index: 1001;
+            background-image: linear-gradient(rgba(#000, 1), rgba(#000, 0));
+
+            &_icon {
+                width: 13px;
+                height: 24px;
+            }
+        }
+
+        &_popup {
+            display: none;
+            position: fixed;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            padding-top: 150px;
+            background: #292929;
+            width: 100%;
+            z-index: 1000;
+
+            &__active {
+                display: block;
+            }
+
+            &_nav {
+                width: 100%;
+                max-height: 300px;
+        
+                &_list {
+                    width: 100%;
+                    list-style-type: none;
+                }
+
+                & li {
+                    margin: 24px 0;
+                    text-align: center;
+        
+                }
+        
+                &_link {
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .welcome {
+        width: 100%;
+        display: block;
+        padding-top: 75px;
+        height: 800px;
+
+        &_info {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 0;
+
+            &_title {
+                font-weight: 700;
+                font-size: 20px;
+                width: 70%;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            &_subtitle {
+                font-weight: 700;
+                font-size: 12px;
+                text-align: center;
+                width: 60%;
+                margin: {
+                    left: auto;
+                    right: auto;
+                    top: 15px;
+                };
+            }
+
+            &_buttons {
+                display: none;
+            }
+        }
+
+        &_images {
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+
+            &_big-img {
+                width: 100%;
+                object-fit: contain;
+            }
+
+            &_smalls {
+                width: 70%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                position: absolute;
+                top: 175px;
+                left: 50%;
+                gap: 10px;
+                transform: translate(-50%, 0);
+            }
+
+            &_small {
+                width: 100%;
+                height: auto;
+                margin: 0;
+            }
+        }
+    }
+
+    .benefits {
+        width: 100%;
+        margin-top: 60px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        &_container {
+            display: block;
+            width: 100%;
+        }
+
+        &_benefit {
+            width: 80%;
+            min-height: 90px;
+            margin: {
+                top: 15px !important;
+                bottom: 15px !important;
+                left: auto;
+                right: auto;
+            };
+
+            &_text {
+                font-weight: 400;
+                font-size: 12px;
+                width: 80%;
+                left: -20px;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+
+            &_img {
+                width: 60px;
+                height: 60px;
+                right: -20px;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+
+        &_footer {
+            width: 90%;
+            margin: 0 auto;
+
+            &_text {
+                font-weight: 400;
+                font-size: 16px;
+
+                & b {
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+            }
+            &_img {
+                width: 110px;
+                height: 66px;
+            }
+        }
+    }
+
+    .about-bitrix {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        &_container {
+            grid-template-columns: repeat(2, 1fr);
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &_item {
+            width: 100%;
+
+            &_title {
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            &_text {
+                font-weight: 400;
+                font-size: 12px;
+            }
+
+            &_list-item {
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .how-we-work {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        &_container {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &_item {
+            width: 85%;
+            margin: {
+                right: 0;
+                left: auto;
+                top: 0;
+                bottom: 20px;
+            };
+
+            &_title {
+                font-weight: 700;
+                font-size: 14px;
+                margin: 0;
+                margin-bottom: 30px;
+            }
+
+            &_text {
+                font-weight: 400;
+                font-size: 12px;
+            }
+
+            &_img {
+                width: 60px;
+                height: 60px;
+                top: 0;
+                right: 0;
+                left: auto;
+            }
+
+            &_number {
+                left: -50px;
+                height: 50px;
+                bottom: auto;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+    }
+
+    .rates {
+        width: 100%;
+        margin-top: 80px;
+
+        &_buttons {
+            width: 95%;
+            margin: {
+                left: auto;
+                right: auto;
+            };
+        }
+
+        &_button {
+            font-weight: 300;
+            font-size: 18px;
+            text-align: left;
+            width: 40%;
+
+            &_active {
+                font-weight: 400;
+                font-size: 18px;
+                text-align: left;
+            }
+        }
+
+        &_cards {
+            display: block;
+            width: 100%;
+        }
+
+        &_card-wrapper {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        &_card {
+            width: 80%;
+
+            &_title {
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            &_price {
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            &_desc {
+                font-weight: 700;
+                font-size: 12px;
+            }
+
+            &_button-wrap {
+                z-index: 100;
+                &_button {
+                    background: #A4E439;
+                    color: #000;
+                    z-index: 100;
+                }
+            }
+        }
+    }
+
+    .competentions {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        &_container {
+            grid-template-columns: repeat(2, 1fr);
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &_competention {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+
+            &_img-wrap {
+                width: 210px;
+                height: 210px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+
+            &_img {
+                opacity: 0;
+            }
+
+            &_text {
+                position: static;
+                color: #fff;
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .solutions {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        &_subtitle {
+            font-weight: 700;
+            font-size: 14px;
+            text-align: center;
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        &_body {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+
+            &_info {
+                &_title {
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 12px;
+                    margin: 20px 0;
+                }
+
+                &_text {
+                    font-weight: 400;
+                    font-size: 12px;
+                    text-align: center;
+                }
+
+                &_button {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .cases {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        &_container {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &_video {
+            & iframe {
+                width: 100%;
+            }
+        }
+
+        &_case {
+            width: 100%;
+            margin-bottom: 20px;
+
+            &_title {
+                font-weight: 700;
+                font-size: 14px;
+            }
+
+            &_text {
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .clients {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        &_slider {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        &_client {
+            flex: 0 0 100%;
+        }
+    }
+
+    .about-us {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            text-align: center;
+            font-weight: 400;
+            font-size: 24px;
+            margin-bottom: 50px;
+        }
+
+        &_marks {
+            width: 90%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        &_mark {
+            display: block;
+
+            &_img {
+                width: 60px;
+                height: 60px;
+            }
+
+            &_text {
+                font-weight: 700;
+                font-size: 14px;
+            }
+        }
+
+        &_body {
+            width: 90%;
+            margin: 0 auto;
+            display: block;
+
+            &_img {
+                width: 100%;
+                object-fit: contain;
+            }
+
+            &_info {
+                width: 100%;
+
+                &_text {
+                    font-weight: 400;
+                    font-size: 12px;
+                    text-align: center;
+                }
+
+                &_button {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .audit {
+        width: 100%;
+        display: block;
+        margin-top: 80px;
+
+        &_container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &_title {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        &_form {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &_img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .footer {
+        height: auto;
+        margin: 0;
+        background-size: contain;
+        padding-bottom: 200px;
+
+        &_content {
+            display: block;
+            width: 100%;
+            height: 50%;
+
+            &_policy {
+                position: static;
+                text-align: center;
+                margin-bottom: 40px;
+                width: 100%;
+                display: block;
+            }
+
+            &_trademark {
+                position: static;
+                text-align: center;
+            }
+        }
+
+        &_services {
+            display: none;
+        }
+
+        &_about-us {
+            display: none;
+        }
+
+        &_different {
+            width: 50%;
+            margin: 0 auto;
+
+            &_social {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 80px;
+                margin-bottom: 40px;
+            }
+            &_info {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 499px) {
+    .head-menu {
+        display: none;
+
+        &__small {
+            position: fixed;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 20px;
+            height: 70px;
+            z-index: 1001;
+            background-image: linear-gradient(rgba(#000, 1), rgba(#000, 0));
+
+            &_icon {
+                width: 13px;
+                height: 24px;
+            }
+        }
+
+        &_popup {
+            display: none;
+            position: fixed;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            padding-top: 150px;
+            background: #292929;
+            width: 100%;
+            z-index: 1000;
+
+            &__active {
+                display: block;
+            }
+
+            &_nav {
+                width: 100%;
+                max-height: 300px;
+        
+                &_list {
+                    width: 100%;
+                    list-style-type: none;
+                }
+
+                & li {
+                    margin: 24px 0;
+                    text-align: center;
+        
+                }
+        
+                &_link {
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .welcome {
+        width: 100%;
+        display: block;
+        padding-top: 75px;
+        height: 700px;
+
+        &_info {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 0;
+
+            &_title {
+                font-weight: 700;
+                font-size: 20px;
+                width: 70%;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            &_subtitle {
+                font-weight: 700;
+                font-size: 12px;
+                text-align: center;
+                width: 60%;
+                margin: {
+                    left: auto;
+                    right: auto;
+                    top: 15px;
+                };
+            }
+
+            &_buttons {
+                display: none;
+            }
+        }
+
+        &_images {
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+
+            &_big-img {
+                width: 100%;
+                object-fit: contain;
+            }
+
+            &_smalls {
+                width: 80%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                position: absolute;
+                top: 175px;
+                left: 50%;
+                gap: 10px;
+                transform: translate(-50%, 0);
+            }
+
+            &_small {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+
+    .benefits {
+        width: 100%;
+        margin-top: 60px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        &_container {
+            display: block;
+            width: 100%;
+        }
+
+        &_benefit {
+            width: 80%;
+            min-height: 90px;
+            margin: {
+                top: 15px !important;
+                bottom: 15px !important;
+                left: auto;
+                right: auto;
+            };
+
+            &_text {
+                font-weight: 400;
+                font-size: 10px;
+                width: 80%;
+                left: -20px;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+
+            &_img {
+                width: 60px;
+                height: 60px;
+                right: -20px;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+
+        &_footer {
+            width: 90%;
+            margin: 0 auto;
+
+            &_text {
+                font-weight: 400;
+                font-size: 16px;
+                margin-right: 70px;
+
+                & b {
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+            }
+            &_img {
+                width: 70px;
+                height: auto;
+            }
+        }
+    }
+
+    .about-bitrix {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        &_container {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &_item {
+            margin: 45px 0;
+            width: 100%;
+
+            &_title {
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            &_text {
+                font-weight: 400;
+                font-size: 12px;
+            }
+
+            &_list-item {
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .how-we-work {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        &_container {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &_item {
+            width: 75%;
+            margin: {
+                right: 0;
+                left: auto;
+                top: 0;
+                bottom: 20px;
+            };
+
+            &_title {
+                font-weight: 700;
+                font-size: 14px;
+                margin: 0;
+                margin-bottom: 30px;
+            }
+
+            &_text {
+                font-weight: 400;
+                font-size: 12px;
+            }
+
+            &_img {
+                width: 60px;
+                height: 60px;
+                top: 0;
+                right: 0;
+                left: auto;
+            }
+
+            &_number {
+                left: -50px;
+                height: 50px;
+                bottom: 0;
+            }
+        }
+    }
+
+    .rates {
+        width: 100%;
+        margin-top: 80px;
+
+        &_buttons {
+            width: 95%;
+            margin: {
+                left: auto;
+                right: auto;
+            };
+        }
+
+        &_button {
+            font-weight: 300;
+            font-size: 18px;
+            text-align: left;
+            width: 40%;
+
+            &_active {
+                font-weight: 400;
+                font-size: 18px;
+                text-align: left;
+
+                &::before {
+                    width: 100%;
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }
+
+        &_cards {
+            display: block;
+            width: 100%;
+        }
+
+        &_card-wrapper {
+            width: 95%;
+            margin-bottom: 30px;
+        }
+
+        &_card {
+            width: 100%;
+
+            &_title {
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            &_price {
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            &_desc {
+                font-weight: 700;
+                font-size: 12px;
+            }
+
+            &_button-wrap {
+                z-index: 100;
+                &_button {
+                    background: #A4E439;
+                    color: #000;
+                    z-index: 100;
+                }
+            }
+        }
+    }
+
+    .competentions {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        &_container {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &_competention {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 40px;
+
+            &_img-wrap {
+                width: 210px;
+                height: 210px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+
+            &_img {
+                opacity: 0;
+            }
+
+            &_circle {
+                top: 0px;
+                left: 0px;
+                transform: scale(1.25);
+            }
+
+            &_text {
+                position: static;
+                color: #fff;
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .solutions {
+        width: 100%;
+        background-position: center bottom;
+        background-size: contain;
+        margin-top: 80px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        &_subtitle {
+            font-weight: 700;
+            font-size: 14px;
+            text-align: center;
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        &_body {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+
+            &_info {
+                &_title {
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 12px;
+                    margin: 20px 0;
+                }
+
+                &_text {
+                    font-weight: 400;
+                    font-size: 12px;
+                    text-align: center;
+                }
+
+                &_button {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .cases {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        &_container {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &_video {
+            & iframe {
+                height: 40%;
+            }
+        }
+
+        &_case {
+            width: 100%;
+            margin-bottom: 20px;
+
+            &_title {
+                font-weight: 700;
+                font-size: 14px;
+            }
+
+            &_text {
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .clients {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        &_slider {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        &_client {
+            flex: 0 0 100%;
+            min-width: 200px;
+        }
+    }
+
+    .about-us {
+        width: 100%;
+        margin-top: 80px;
+
+        &_title {
+            text-align: center;
+            font-weight: 400;
+            font-size: 24px;
+            margin-bottom: 50px;
+        }
+
+        &_marks {
+            width: 90%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        &_mark {
+            display: block;
+
+            &_img {
+                width: 60px;
+                height: 60px;
+            }
+
+            &_text {
+                font-weight: 700;
+                font-size: 14px;
+                width: 100%;
+            }
+        }
+
+        &_body {
+            width: 90%;
+            margin: 0 auto;
+            display: block;
+
+            &_img {
+                width: 100%;
+                object-fit: contain;
+            }
+
+            &_info {
+                width: 100%;
+
+                &_text {
+                    font-weight: 400;
+                    font-size: 12px;
+                    text-align: center;
+                }
+
+                &_button {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .audit {
+        width: 100%;
+        display: block;
+        margin-top: 80px;
+
+        &_container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &_title {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        &_form {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &_img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .footer {
+        height: auto;
+        margin: 0;
+        background-size: contain;
+        padding-bottom: 200px;
+
+        &_content {
+            display: block;
+            width: 100%;
+            height: 50%;
+
+            &_policy {
+                position: static;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
+            &_trademark {
+                position: static;
+                text-align: center;
+            }
+        }
+
+        &_services {
+            display: none;
+        }
+
+        &_about-us {
+            display: none;
+        }
+
+        &_different {
+            width: 50%;
+            margin: 0 auto;
+
+            &_social {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 80px;
+                margin-bottom: 40px;
+            }
+            &_info {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --blue-green-gradient: linear-gradient(225deg, #72F550 0%, #00A3FF 100%);
+  --blue-green-gradient-v2: linear-gradient(100.04deg, #00FF19 -7.48%, #001AFF 114.63%);
+  --dark-gray: #292929;
+  --light-gray: #4F4F4F;
+  --light-gray-v2: #404040;
+  --green: #A4E439 ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.button__blue-green {
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 16px;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  transition: all 0.5s;
+  cursor: pointer;
+  background: var(--blue-green-gradient);
+}
+.button__blue-green:hover {
+  background: var(--blue-green-gradient-v2);
+}
+
+.button__transparent {
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 16px;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  transition: all 0.5s;
+  cursor: pointer;
+  border: 2px solid #fff;
+  background: none;
+}
+.button__transparent:hover {
+  background: var(--green);
+  border-color: var(--green);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--dark-gray);
+  background-image: url(./img/bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: var(--font-family);
+}
+
+#app {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

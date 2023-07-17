@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --blue-green-gradient: linear-gradient(225deg, #72F550 0%, #00A3FF 100%);
+  --blue-green-gradient-v2: linear-gradient(100.04deg, #00FF19 -7.48%, #001AFF 114.63%);
+  --dark-gray: #292929;
+  --light-gray: #4F4F4F;
+  --light-gray-v2: #404040;
+  --green: #A4E439 ;
+}
+
+.about-bitrix {
+  width: 70%;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-bitrix_title {
+  font-weight: 300;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.about-bitrix_container {
+  gap: 45px 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.about-bitrix_item {
+  width: 95%;
+}
+.about-bitrix_item_title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--green);
+}
+.about-bitrix_item_text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  margin: 15px 0;
+}
+.about-bitrix_item_list {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  width: 80%;
+  margin: 15px auto;
+}/*# sourceMappingURL=about-bitrix.css.map */

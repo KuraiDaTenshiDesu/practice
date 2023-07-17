@@ -1,0 +1,1811 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --blue-green-gradient: linear-gradient(225deg, #72F550 0%, #00A3FF 100%);
+  --blue-green-gradient-v2: linear-gradient(100.04deg, #00FF19 -7.48%, #001AFF 114.63%);
+  --dark-gray: #292929;
+  --light-gray: #4F4F4F;
+  --light-gray-v2: #404040;
+  --green: #A4E439 ;
+}
+
+@media (max-width: 1900px) {
+  .head-menu {
+    margin-left: 20px;
+    width: 150px;
+  }
+  .head-menu_nav_link {
+    font-size: 14px;
+  }
+  .head-menu_info_phone {
+    font-size: 14px;
+  }
+  .head-menu_info_email {
+    font-size: 14px;
+  }
+  .welcome_images_smalls {
+    left: -30%;
+  }
+  .welcome_images_small {
+    width: 150px;
+    height: 150px;
+  }
+  .benefits_benefit {
+    min-height: 200px;
+  }
+  .benefits_benefit_img {
+    width: 100px;
+    height: 100px;
+  }
+  .how-we-work {
+    width: 80%;
+  }
+  .how-we-work_container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .how-we-work_item_number {
+    height: 100px;
+    left: -100px;
+    bottom: auto;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .rates_button {
+    font-size: 32px;
+  }
+  .rates_button_active {
+    font-size: 40px;
+  }
+  .rates_card-wrapper {
+    width: 90%;
+  }
+  .competentions {
+    width: 65%;
+  }
+  .competentions_competention_img-wrap {
+    width: 220px;
+    height: 220px;
+  }
+  .competentions_competention:hover .competentions_competention_circle {
+    top: 0px;
+    left: 0px;
+    transform: scale(1.15);
+  }
+  .about-us_body_img {
+    width: 600px;
+  }
+  .audit_img {
+    width: 500px;
+  }
+  .cases_case_title {
+    font-size: 20px;
+  }
+  .cases_case_text {
+    font-size: 14px;
+  }
+  .clients_client {
+    flex: 0 0 33.33%;
+  }
+  .about-bitrix_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1499px) {
+  .head-menu {
+    margin-left: 20px;
+    width: 150px;
+  }
+  .head-menu_nav_link {
+    font-size: 12px;
+  }
+  .head-menu_info_phone {
+    padding-left: 20px;
+    font-size: 12px;
+  }
+  .head-menu_info_email {
+    padding-left: 20px;
+    font-size: 12px;
+  }
+  .welcome {
+    width: 85%;
+  }
+  .welcome_info_title {
+    font-size: 40px;
+  }
+  .welcome_images_smalls {
+    left: -15%;
+  }
+  .welcome_images_small {
+    width: 100px;
+    height: 100px;
+  }
+  .benefits_title {
+    font-size: 40px;
+  }
+  .benefits_benefit {
+    min-height: 150px;
+  }
+  .benefits_benefit_text {
+    width: 70%;
+    font-size: 14px;
+  }
+  .benefits_benefit_img {
+    width: 60px;
+    height: 60px;
+    right: 25px;
+  }
+  .benefits_footer_text {
+    font-size: 24px;
+  }
+  .benefits_footer_text b {
+    font-size: 32px;
+  }
+  .benefits_footer_img {
+    width: 150px;
+  }
+  .how-we-work_container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 0 auto;
+  }
+  .how-we-work_item_number {
+    height: 100px;
+    left: -100px;
+    bottom: auto;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .how-we-work_title {
+    font-size: 40px;
+  }
+  .rates_title {
+    font-size: 40px;
+  }
+  .rates_button {
+    font-size: 32px;
+  }
+  .rates_button_active {
+    font-size: 40px;
+  }
+  .rates_card-wrapper {
+    width: 95%;
+  }
+  .competentions {
+    width: 65%;
+  }
+  .competentions_title {
+    font-size: 40px;
+  }
+  .competentions_container {
+    gap: 10px;
+  }
+  .competentions_competention_img-wrap {
+    width: 100%;
+    height: 100%;
+  }
+  .competentions_competention_text {
+    font-size: 10px;
+  }
+  .competentions_competention:hover .competentions_competention_text {
+    bottom: -120px;
+  }
+  .about-us_title {
+    font-size: 40px;
+  }
+  .about-us_marks {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .about-us_mark {
+    justify-content: start;
+  }
+  .about-us_body_img {
+    width: 400px;
+  }
+  .solutions_title {
+    font-size: 40px;
+  }
+  .solutions_subtitle {
+    font-size: 20px;
+  }
+  .solutions_body_info_title {
+    font-size: 14px;
+  }
+  .solutions_body_info_text {
+    font-size: 12px;
+  }
+  .solutions_body_info_button {
+    width: 50%;
+  }
+  .audit_title {
+    font-size: 40px;
+  }
+  .audit_container {
+    width: 100%;
+  }
+  .audit_img {
+    width: 400px;
+  }
+  .cases_title {
+    font-size: 40px;
+  }
+  .cases_case_title {
+    font-size: 20px;
+  }
+  .cases_case_text {
+    font-size: 12px;
+  }
+  .clients_title {
+    font-size: 40px;
+  }
+  .clients_client {
+    flex: 0 0 33.33%;
+  }
+  .about-bitrix_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1099px) {
+  .head-menu {
+    display: none;
+  }
+  .head-menu__small {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    height: 70px;
+    z-index: 1001;
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0));
+  }
+  .head-menu__small_icon {
+    width: 13px;
+    height: 24px;
+  }
+  .head-menu__small_menu-btn {
+    background-image: url("./img/close_icon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 0;
+    transition: all 0.5s;
+  }
+  .head-menu__small_menu-btn img {
+    transition: all 0.5s;
+  }
+  .head-menu__small_menu-btn__active {
+    background-size: contain;
+  }
+  .head-menu__small_menu-btn__active img {
+    opacity: 0;
+  }
+  .head-menu_popup {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding-top: 150px;
+    background: rgba(41, 41, 41, 0.8);
+    width: 30%;
+    z-index: 1000;
+  }
+  .head-menu_popup__active {
+    display: block;
+  }
+  .head-menu_popup_nav {
+    width: 100%;
+    max-height: 300px;
+  }
+  .head-menu_popup_nav_list {
+    width: 100%;
+    list-style-type: none;
+  }
+  .head-menu_popup_nav li {
+    margin: 24px 0;
+    text-align: center;
+  }
+  .head-menu_popup_nav_link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .welcome {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .welcome_info {
+    width: 80%;
+  }
+  .welcome_info_buttons {
+    width: 100%;
+  }
+  .welcome_info_title {
+    font-size: 30px;
+  }
+  .welcome_info_subtitle {
+    font-size: 24px;
+  }
+  .welcome_images_smalls {
+    left: -10%;
+    gap: 10px;
+  }
+  .welcome_images_small {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+  }
+  .benefits {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .benefits_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+  }
+  .benefits_container {
+    width: 100%;
+  }
+  .benefits_benefit {
+    width: 80%;
+    min-height: 90px;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .benefits_benefit_text {
+    font-weight: 400;
+    font-size: 12px;
+    width: 80%;
+    left: -20px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .benefits_benefit_img {
+    width: 60px;
+    height: 60px;
+    right: -20px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .benefits_footer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .benefits_footer_text {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .benefits_footer_text b {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .benefits_footer_img {
+    width: 110px;
+    height: 66px;
+  }
+  .about-bitrix {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .about-bitrix_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+  }
+  .about-bitrix_container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 0 auto;
+  }
+  .about-bitrix_item {
+    width: 100%;
+  }
+  .about-bitrix_item_title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .about-bitrix_item_text {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .about-bitrix_item_list-item {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .how-we-work {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .how-we-work_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .how-we-work_container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 0 auto;
+  }
+  .how-we-work_item {
+    width: 85%;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .how-we-work_item_title {
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .how-we-work_item_text {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .how-we-work_item_img {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    right: 0;
+    left: auto;
+  }
+  .how-we-work_item_number {
+    left: -50px;
+    height: 50px;
+    bottom: auto;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .rates {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .rates_buttons {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .rates_button {
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+    width: 40%;
+  }
+  .rates_button_active {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+  }
+  .rates_cards {
+    width: 100%;
+  }
+  .rates_card-wrapper {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+  .rates_card_title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .rates_card_price {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .rates_card_desc {
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .rates_card_button-wrap {
+    z-index: 100;
+  }
+  .rates_card_button-wrap_button {
+    background: #A4E439;
+    color: #000;
+    z-index: 100;
+  }
+  .competentions {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .competentions_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .competentions_container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 0 auto;
+  }
+  .competentions_competention {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .competentions_competention_img-wrap {
+    width: 210px;
+    height: 210px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .competentions_competention_img {
+    opacity: 0;
+  }
+  .competentions_competention_text {
+    position: static;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .solutions {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .solutions_bg {
+    bottom: -125px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .solutions_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .solutions_subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .solutions_body {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .solutions_body_img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  .solutions_body_info_title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 20px 0;
+  }
+  .solutions_body_info_text {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+  }
+  .solutions_body_info_button {
+    width: 100%;
+    text-align: center;
+  }
+  .cases {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .cases_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .cases_container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .cases_case {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .cases_case_title {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .cases_case_text {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .clients {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .clients_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .clients_slider {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .clients_client {
+    flex: 0 0 50%;
+  }
+  .about-us {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .about-us_title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  .about-us_marks {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  .about-us_mark {
+    display: block;
+  }
+  .about-us_mark_img {
+    width: 60px;
+    height: 60px;
+  }
+  .about-us_mark_text {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .about-us_body {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  .about-us_body_img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .about-us_body_info {
+    width: 100%;
+  }
+  .about-us_body_info_text {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+  }
+  .about-us_body_info_button {
+    width: 100%;
+    text-align: center;
+  }
+  .audit {
+    width: 90%;
+    display: block;
+    margin-top: 80px;
+  }
+  .audit_container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .audit_title {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .audit_form {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .audit_img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .footer {
+    height: auto;
+    margin: 0;
+    background-size: contain;
+    padding-bottom: 200px;
+  }
+  .footer_content {
+    display: block;
+    width: 100%;
+    height: 50%;
+  }
+  .footer_content_policy {
+    position: static;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .footer_content_trademark {
+    position: static;
+    text-align: center;
+  }
+  .footer_services {
+    display: none;
+  }
+  .footer_about-us {
+    display: none;
+  }
+  .footer_different {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .footer_different_social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  .footer_different_info {
+    display: none;
+  }
+}
+@media (max-width: 799px) {
+  .head-menu {
+    display: none;
+  }
+  .head-menu__small {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    height: 70px;
+    z-index: 1001;
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0));
+  }
+  .head-menu__small_icon {
+    width: 13px;
+    height: 24px;
+  }
+  .head-menu_popup {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding-top: 150px;
+    background: #292929;
+    width: 100%;
+    z-index: 1000;
+  }
+  .head-menu_popup__active {
+    display: block;
+  }
+  .head-menu_popup_nav {
+    width: 100%;
+    max-height: 300px;
+  }
+  .head-menu_popup_nav_list {
+    width: 100%;
+    list-style-type: none;
+  }
+  .head-menu_popup_nav li {
+    margin: 24px 0;
+    text-align: center;
+  }
+  .head-menu_popup_nav_link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .welcome {
+    width: 100%;
+    display: block;
+    padding-top: 75px;
+    height: 800px;
+  }
+  .welcome_info {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0;
+  }
+  .welcome_info_title {
+    font-weight: 700;
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .welcome_info_subtitle {
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+  .welcome_info_buttons {
+    display: none;
+  }
+  .welcome_images {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .welcome_images_big-img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .welcome_images_smalls {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    top: 175px;
+    left: 50%;
+    gap: 10px;
+    transform: translate(-50%, 0);
+  }
+  .welcome_images_small {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .benefits {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .benefits_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+  }
+  .benefits_container {
+    display: block;
+    width: 100%;
+  }
+  .benefits_benefit {
+    width: 80%;
+    min-height: 90px;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .benefits_benefit_text {
+    font-weight: 400;
+    font-size: 12px;
+    width: 80%;
+    left: -20px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .benefits_benefit_img {
+    width: 60px;
+    height: 60px;
+    right: -20px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .benefits_footer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .benefits_footer_text {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .benefits_footer_text b {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .benefits_footer_img {
+    width: 110px;
+    height: 66px;
+  }
+  .about-bitrix {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .about-bitrix_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+  }
+  .about-bitrix_container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 0 auto;
+  }
+  .about-bitrix_item {
+    width: 100%;
+  }
+  .about-bitrix_item_title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .about-bitrix_item_text {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .about-bitrix_item_list-item {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .how-we-work {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .how-we-work_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .how-we-work_container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .how-we-work_item {
+    width: 85%;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .how-we-work_item_title {
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .how-we-work_item_text {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .how-we-work_item_img {
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 0;
+    left: auto;
+  }
+  .how-we-work_item_number {
+    left: -50px;
+    height: 50px;
+    bottom: auto;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .rates {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .rates_buttons {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .rates_button {
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+    width: 40%;
+  }
+  .rates_button_active {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+  }
+  .rates_cards {
+    display: block;
+    width: 100%;
+  }
+  .rates_card-wrapper {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .rates_card {
+    width: 80%;
+  }
+  .rates_card_title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .rates_card_price {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .rates_card_desc {
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .rates_card_button-wrap {
+    z-index: 100;
+  }
+  .rates_card_button-wrap_button {
+    background: #A4E439;
+    color: #000;
+    z-index: 100;
+  }
+  .competentions {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .competentions_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .competentions_container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 0 auto;
+  }
+  .competentions_competention {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .competentions_competention_img-wrap {
+    width: 210px;
+    height: 210px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .competentions_competention_img {
+    opacity: 0;
+  }
+  .competentions_competention_text {
+    position: static;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .solutions {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .solutions_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .solutions_subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .solutions_body {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .solutions_body_info_title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 20px 0;
+  }
+  .solutions_body_info_text {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+  }
+  .solutions_body_info_button {
+    width: 100%;
+    text-align: center;
+  }
+  .cases {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .cases_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .cases_container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .cases_video iframe {
+    width: 100%;
+  }
+  .cases_case {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .cases_case_title {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .cases_case_text {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .clients {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .clients_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .clients_slider {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .clients_client {
+    flex: 0 0 100%;
+  }
+  .about-us {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .about-us_title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  .about-us_marks {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  .about-us_mark {
+    display: block;
+  }
+  .about-us_mark_img {
+    width: 60px;
+    height: 60px;
+  }
+  .about-us_mark_text {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .about-us_body {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  .about-us_body_img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .about-us_body_info {
+    width: 100%;
+  }
+  .about-us_body_info_text {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+  }
+  .about-us_body_info_button {
+    width: 100%;
+    text-align: center;
+  }
+  .audit {
+    width: 100%;
+    display: block;
+    margin-top: 80px;
+  }
+  .audit_container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .audit_title {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .audit_form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .audit_img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .footer {
+    height: auto;
+    margin: 0;
+    background-size: contain;
+    padding-bottom: 200px;
+  }
+  .footer_content {
+    display: block;
+    width: 100%;
+    height: 50%;
+  }
+  .footer_content_policy {
+    position: static;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+    display: block;
+  }
+  .footer_content_trademark {
+    position: static;
+    text-align: center;
+  }
+  .footer_services {
+    display: none;
+  }
+  .footer_about-us {
+    display: none;
+  }
+  .footer_different {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .footer_different_social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  .footer_different_info {
+    display: none;
+  }
+}
+@media (max-width: 499px) {
+  .head-menu {
+    display: none;
+  }
+  .head-menu__small {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    height: 70px;
+    z-index: 1001;
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0));
+  }
+  .head-menu__small_icon {
+    width: 13px;
+    height: 24px;
+  }
+  .head-menu_popup {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding-top: 150px;
+    background: #292929;
+    width: 100%;
+    z-index: 1000;
+  }
+  .head-menu_popup__active {
+    display: block;
+  }
+  .head-menu_popup_nav {
+    width: 100%;
+    max-height: 300px;
+  }
+  .head-menu_popup_nav_list {
+    width: 100%;
+    list-style-type: none;
+  }
+  .head-menu_popup_nav li {
+    margin: 24px 0;
+    text-align: center;
+  }
+  .head-menu_popup_nav_link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .welcome {
+    width: 100%;
+    display: block;
+    padding-top: 75px;
+    height: 700px;
+  }
+  .welcome_info {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0;
+  }
+  .welcome_info_title {
+    font-weight: 700;
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .welcome_info_subtitle {
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+  .welcome_info_buttons {
+    display: none;
+  }
+  .welcome_images {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .welcome_images_big-img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .welcome_images_smalls {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    top: 175px;
+    left: 50%;
+    gap: 10px;
+    transform: translate(-50%, 0);
+  }
+  .welcome_images_small {
+    width: 100%;
+    margin: 0;
+  }
+  .benefits {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .benefits_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+  }
+  .benefits_container {
+    display: block;
+    width: 100%;
+  }
+  .benefits_benefit {
+    width: 80%;
+    min-height: 90px;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .benefits_benefit_text {
+    font-weight: 400;
+    font-size: 10px;
+    width: 80%;
+    left: -20px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .benefits_benefit_img {
+    width: 60px;
+    height: 60px;
+    right: -20px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .benefits_footer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .benefits_footer_text {
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 70px;
+  }
+  .benefits_footer_text b {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .benefits_footer_img {
+    width: 70px;
+    height: auto;
+  }
+  .about-bitrix {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .about-bitrix_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+  }
+  .about-bitrix_container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .about-bitrix_item {
+    margin: 45px 0;
+    width: 100%;
+  }
+  .about-bitrix_item_title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .about-bitrix_item_text {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .about-bitrix_item_list-item {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .how-we-work {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .how-we-work_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .how-we-work_container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .how-we-work_item {
+    width: 75%;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .how-we-work_item_title {
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .how-we-work_item_text {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .how-we-work_item_img {
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 0;
+    left: auto;
+  }
+  .how-we-work_item_number {
+    left: -50px;
+    height: 50px;
+    bottom: 0;
+  }
+  .rates {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .rates_buttons {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .rates_button {
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+    width: 40%;
+  }
+  .rates_button_active {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+  }
+  .rates_button_active::before {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  .rates_cards {
+    display: block;
+    width: 100%;
+  }
+  .rates_card-wrapper {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+  .rates_card {
+    width: 100%;
+  }
+  .rates_card_title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .rates_card_price {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .rates_card_desc {
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .rates_card_button-wrap {
+    z-index: 100;
+  }
+  .rates_card_button-wrap_button {
+    background: #A4E439;
+    color: #000;
+    z-index: 100;
+  }
+  .competentions {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .competentions_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .competentions_container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .competentions_competention {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .competentions_competention_img-wrap {
+    width: 210px;
+    height: 210px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .competentions_competention_img {
+    opacity: 0;
+  }
+  .competentions_competention_circle {
+    top: 0px;
+    left: 0px;
+    transform: scale(1.25);
+  }
+  .competentions_competention_text {
+    position: static;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .solutions {
+    width: 100%;
+    background-position: center bottom;
+    background-size: contain;
+    margin-top: 80px;
+  }
+  .solutions_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .solutions_subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .solutions_body {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .solutions_body_info_title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 20px 0;
+  }
+  .solutions_body_info_text {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+  }
+  .solutions_body_info_button {
+    width: 100%;
+    text-align: center;
+  }
+  .cases {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .cases_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .cases_container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .cases_video iframe {
+    height: 40%;
+  }
+  .cases_case {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .cases_case_title {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .cases_case_text {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .clients {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .clients_title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .clients_slider {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .clients_client {
+    flex: 0 0 100%;
+    min-width: 200px;
+  }
+  .about-us {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .about-us_title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  .about-us_marks {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  .about-us_mark {
+    display: block;
+  }
+  .about-us_mark_img {
+    width: 60px;
+    height: 60px;
+  }
+  .about-us_mark_text {
+    font-weight: 700;
+    font-size: 14px;
+    width: 100%;
+  }
+  .about-us_body {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  .about-us_body_img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .about-us_body_info {
+    width: 100%;
+  }
+  .about-us_body_info_text {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+  }
+  .about-us_body_info_button {
+    width: 100%;
+    text-align: center;
+  }
+  .audit {
+    width: 100%;
+    display: block;
+    margin-top: 80px;
+  }
+  .audit_container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .audit_title {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .audit_form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .audit_img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .footer {
+    height: auto;
+    margin: 0;
+    background-size: contain;
+    padding-bottom: 200px;
+  }
+  .footer_content {
+    display: block;
+    width: 100%;
+    height: 50%;
+  }
+  .footer_content_policy {
+    position: static;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .footer_content_trademark {
+    position: static;
+    text-align: center;
+  }
+  .footer_services {
+    display: none;
+  }
+  .footer_about-us {
+    display: none;
+  }
+  .footer_different {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .footer_different_social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  .footer_different_info {
+    display: none;
+  }
+}/*# sourceMappingURL=media.css.map */

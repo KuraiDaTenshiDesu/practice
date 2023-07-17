@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --blue-green-gradient: linear-gradient(225deg, #72F550 0%, #00A3FF 100%);
+  --blue-green-gradient-v2: linear-gradient(100.04deg, #00FF19 -7.48%, #001AFF 114.63%);
+  --dark-gray: #292929;
+  --light-gray: #4F4F4F;
+  --light-gray-v2: #404040;
+  --green: #A4E439 ;
+}
+
+.rates {
+  width: 70%;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rates_buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+.rates_button {
+  font-weight: 300;
+  font-size: 36px;
+  color: #c7c7c7;
+  background: none;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.rates_button:hover {
+  color: #fff;
+}
+.rates_button_active {
+  font-size: 48px;
+  color: #fff;
+  position: relative;
+  transition: all 0.5s;
+}
+.rates_button_active::before {
+  content: "";
+  height: 3px;
+  width: 25%;
+  background: #A4E439;
+  left: 0;
+  position: absolute;
+  bottom: -5px;
+  transition: all 0.5s;
+}
+.rates_cards-container {
+  overflow: hidden;
+  display: flex;
+  transition: all 0.5s;
+}
+.rates_cards {
+  width: 100%;
+  display: flex;
+  transition: all 0.5s;
+}
+.rates_card-wrapper {
+  display: inline-flex;
+  flex: 0 0 33.33%;
+}
+.rates_card {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(225deg, #72F550 0%, #00A3FF 100%);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.rates_card::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-radius: 4px;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.rates_card:hover .rates_card_title {
+  color: #000;
+  font-size: 20px;
+}
+.rates_card:hover .rates_card_price {
+  font-size: 32px;
+  color: #000;
+}
+.rates_card:hover .rates_card_desc {
+  color: #000;
+}
+.rates_card:hover .rates_card_list_item {
+  color: #000;
+}
+.rates_card:hover .rates_card_list_item span {
+  color: #000;
+}
+.rates_card:hover::before {
+  top: 100%;
+  height: 0%;
+}
+.rates_card_title {
+  font-weight: 600;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+  z-index: 100;
+  transition: all 0.3s;
+}
+.rates_card_price {
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 40px;
+  z-index: 100;
+  transition: all 0.3s;
+}
+.rates_card_desc {
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  z-index: 100;
+  transition: all 0.3s;
+}
+.rates_card_list {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  z-index: 100;
+}
+.rates_card_list_item {
+  color: #A4E439;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+.rates_card_list_item span {
+  color: #fff;
+  transition: all 0.3s;
+}
+.rates_card_button-wrap {
+  width: 100%;
+  background: #000;
+  padding: 25px 0;
+}
+.rates_card_button-wrap_button {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}/*# sourceMappingURL=rates.css.map */

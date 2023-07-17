@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --blue-green-gradient: linear-gradient(225deg, #72F550 0%, #00A3FF 100%);
+  --blue-green-gradient-v2: linear-gradient(100.04deg, #00FF19 -7.48%, #001AFF 114.63%);
+  --dark-gray: #292929;
+  --light-gray: #4F4F4F;
+  --light-gray-v2: #404040;
+  --green: #A4E439 ;
+}
+
+.clients {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+.clients_title {
+  color: #fff;
+  font-weight: 300;
+  font-size: 48px;
+}
+.clients_slider {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 90%;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.clients_slider_container {
+  min-height: 100px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  transition: all 0.5s;
+}
+.clients_slider_arrow {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  transform: translate(0, -50%);
+  z-index: 50;
+  cursor: pointer;
+}
+.clients_slider_arrow__left {
+  left: 0;
+}
+.clients_slider_arrow__right {
+  right: 0;
+}
+.clients_client {
+  display: inline-flex;
+  vertical-align: top;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 25%;
+  min-width: 300px;
+}
+.clients_client svg {
+  max-width: 80%;
+}/*# sourceMappingURL=clients.css.map */

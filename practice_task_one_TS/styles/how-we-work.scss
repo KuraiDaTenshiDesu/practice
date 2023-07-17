@@ -1,0 +1,63 @@
+@import './mixins';
+@import './roots';
+
+.how-we-work {
+    width: 70%;
+    margin: {
+        top: 200px;
+        right: auto;
+        left: auto;
+    };
+
+    &_title {
+        color: #fff;
+        font-size: 48px;
+        font-weight: 300;
+    }
+
+    &_container {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &_item {
+        width: 70%;
+        position: relative;
+        margin: {
+            left: auto;
+            top: 100px;
+        };
+
+        &_title {
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
+            width: 80%;
+            margin: {
+                left: auto;
+                bottom: 30px;
+            };
+        }
+
+        &_text {
+            color: #fff;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        &_img {
+            position: absolute;
+            top: -30px;
+            left: 0;
+            z-index: -1;
+        }
+
+        &_number {
+            position: absolute;
+            bottom: 0;
+            height: 125px;
+            left: -110px;
+        }
+    }
+}

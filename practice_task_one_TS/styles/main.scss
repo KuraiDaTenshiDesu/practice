@@ -1,0 +1,43 @@
+@import './roots';
+@import './mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth
+}
+
+.button__blue-green {
+    @include button();
+    background: var(--blue-green-gradient);
+
+    &:hover {
+        background: var(--blue-green-gradient-v2);
+    }
+}
+
+.button__transparent {
+    @include button();
+    border: 2px solid #fff;
+    background: none;
+
+    &:hover {
+        background: var(--green);
+        border-color: var(--green);
+    }
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--dark-gray);
+    background-image: url(./img/bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: var(--font-family);
+}
+
+#app {
+    width: 100%;
+}

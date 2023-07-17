@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --blue-green-gradient: linear-gradient(225deg, #72F550 0%, #00A3FF 100%);
+  --blue-green-gradient-v2: linear-gradient(100.04deg, #00FF19 -7.48%, #001AFF 114.63%);
+  --dark-gray: #292929;
+  --light-gray: #4F4F4F;
+  --light-gray-v2: #404040;
+  --green: #A4E439 ;
+}
+
+.cases {
+  width: 70%;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cases_title {
+  color: #fff;
+  font-weight: 300;
+  font-size: 48px;
+}
+.cases_container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.cases_video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cases_video iframe {
+  width: 60%;
+  height: 60%;
+}
+.cases_video__hidden {
+  display: none;
+}
+.cases_case {
+  cursor: pointer;
+}
+.cases_case_title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+}
+.cases_case_text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.cases_case_preview {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=cases.css.map */

@@ -1,0 +1,51 @@
+@import './mixins';
+@import './roots';
+
+.about-bitrix {
+    width: 70%;
+    margin: {
+        top: 200px;
+        left: auto;
+        right: auto;
+    }
+
+    &_title {
+        font-weight: 300;
+        font-size: 48px;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+
+    &_container {
+        gap: 45px 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    &_item {
+        width: 95%;
+
+        &_title {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 24px;
+            color: var(--green);
+        }
+
+        &_text {
+            font-weight: 400;
+            font-size: 14px;
+            color: #fff;
+            margin: 15px 0;
+        }
+
+        &_list {
+            font-weight: 400;
+            font-size: 14px;
+            color: #fff;
+            width: 80%;
+            margin: 15px auto;
+        }
+    }
+}
