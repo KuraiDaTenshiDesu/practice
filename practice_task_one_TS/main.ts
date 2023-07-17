@@ -27,6 +27,7 @@ import cardsSlider from './modules/scripts/cards_slider';
 import closePopups from './modules/scripts/close_popups';
 import aboutUsSlider from './modules/scripts/about_us_slider';
 import validatePhone from './modules/scripts/validate_phone';
+import getInfoFromAPI from './modules/scripts/get_info_from_api';
 
 document.querySelector('#app')!.innerHTML = app;
 
@@ -73,3 +74,5 @@ document.getElementById('phone')!.addEventListener('input', () => {validatePhone
 // CLOSE POPUPS EVENT LISTENER
 
 document.addEventListener('click', (event) => {closePopups(event)});
+
+getInfoFromAPI();
