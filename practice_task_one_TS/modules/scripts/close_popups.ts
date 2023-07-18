@@ -1,14 +1,18 @@
-function closePopups(event: Event) {
-    let videos = document.querySelectorAll('.cases_video');
+function closePopups(event: Event): void {
+    let videos: NodeListOf<HTMLElement> = document.querySelectorAll('.cases_video');
+    let target = <HTMLElement> event.target;
+    let popup: HTMLElement | null = document.querySelector('.popup');
 
-    if ((event.target as HTMLElement).classList.contains('cases_video')) {
+    if (target.classList.contains('cases_video')) {
         videos.forEach((video) => {
             video.classList.add('cases_video__hidden');
         })
     }
 
-    if ((event.target as HTMLElement).classList.contains('popup')) {
-        document.querySelector('.popup')!.classList.add('popup__hidden');
+    if (target.classList.contains('popup')) {
+        if (popup !== null) {
+            popup.classList.add('popup__hidden')
+        }
     }
 }
 

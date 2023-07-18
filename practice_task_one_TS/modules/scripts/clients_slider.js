@@ -9,7 +9,9 @@ window.addEventListener('DOMContentLoaded', () => {
     current = 0;
     slider = document.querySelector('.clients_slider_container');
     slides_on_page = getSliderRows();
-    slider.style.transform = `translate3d(0, 0, 0)`;
+    if (slider !== null) {
+        slider.style.transform = `translate3d(0, 0, 0)`;
+    }
 });
 window.addEventListener('resize', () => {
     slides_on_page = getSliderRows();
@@ -26,6 +28,8 @@ function arrowClick(direction) {
     else if (current >= length - slides_on_page) {
         current = 0;
     }
-    slider.style.transform = `translate3d(${-(current) * slide_width}px, 0, 0)`;
+    if (slider !== null) {
+        slider.style.transform = `translate3d(${-(current) * slide_width}px, 0, 0)`;
+    }
 }
 export default arrowClick;

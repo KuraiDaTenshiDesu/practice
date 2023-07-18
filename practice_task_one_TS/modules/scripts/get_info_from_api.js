@@ -1,7 +1,7 @@
 function getInfoFromAPI() {
     fetch('https://64b5231ef3dbab5a95c6c5c5.mockapi.io/data')
         .then(response => response.json())
-        .then(result => {
+        .then((result) => {
         let cases = result[0].cases;
         let rates = result[0].rates;
         let clients = result[0].clients;
@@ -43,7 +43,6 @@ function getInfoFromAPI() {
             document.querySelector('.rates_cards').innerHTML += html;
         });
         clients.forEach(function (element) {
-            console.log(element);
             let html = `
                 <div class = "clients_client">
                     <img src = "${element.img_src}" alt = "client-${element.name}">

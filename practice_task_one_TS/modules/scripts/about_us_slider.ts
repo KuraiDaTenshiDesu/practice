@@ -1,20 +1,19 @@
 let container: HTMLElement | null;
 let slide: HTMLElement | null;
-let slide_counter: number;
+let slide_counter = 1;
 
-window.addEventListener('DOMContentLoaded', () => {
-    container = <HTMLElement>document.querySelector('.about-us_body_slider');
-    slide = <HTMLElement>document.querySelector('.about-us_body_img');
-    slide_counter = 1;
-})
+function aboutUsSlider(): void {
+    container = document.querySelector('.about-us_body_slider');
+    slide = document.querySelector('.about-us_body_img');
 
-function aboutUsSlider() {
-    if (slide_counter >= container!.childElementCount) {
-        container!.style.transform = `translate(0, 0)`;
-        slide_counter = 1;
-    } else {
-        container!.style.transform = `translate(-${slide_counter * slide!.offsetWidth}px, 0)`;
-        slide_counter++;
+    if (container !== null && slide !== null) {
+        if (slide_counter >= container.childElementCount) {
+            container.style.transform = `translate(0, 0)`;
+            slide_counter = 1;
+        } else {
+            container.style.transform = `translate(-${slide_counter * slide.offsetWidth}px, 0)`;
+            slide_counter++;
+        }
     }
 }
 
