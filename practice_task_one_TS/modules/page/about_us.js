@@ -25,11 +25,11 @@ let about_us = `
   </div>
 
   <div class = "about-us_body">
-    <div class = "about-us_body_slider-container">
-      <div class = "about-us_body_slider">
-        <img class = "about-us_body_img" src = "./img/about_us_img.png">
-        <img class = "about-us_body_img" src = "./img/about_us_img.png">
-        <img class = "about-us_body_img" src = "./img/about_us_img.png">
+    <div class = "about-us_body_slider-container swiper about-us-swiper">
+      <div class = "about-us_body_slider swiper-wrapper">
+        <img class = "about-us_body_img swiper-slide" src = "./img/about_us_img.png">
+        <img class = "about-us_body_img swiper-slide" src = "./img/about_us_img.png">
+        <img class = "about-us_body_img swiper-slide" src = "./img/about_us_img.png">
       </div>
     </div>
     

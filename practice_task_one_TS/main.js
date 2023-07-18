@@ -1,3 +1,4 @@
+import 'swiper/css/bundle';
 import './styles/reset.css';
 import './styles/main.css';
 import './styles/about-bitrix.css';
@@ -24,7 +25,6 @@ import showCurrentYear from './modules/scripts/show_current_year';
 import editCardsContainer from './modules/scripts/edit_cards_container';
 import cardsSlider from './modules/scripts/cards_slider';
 import closePopups from './modules/scripts/close_popups';
-import aboutUsSlider from './modules/scripts/about_us_slider';
 import validatePhone from './modules/scripts/validate_phone';
 import getInfoFromAPI from './modules/scripts/get_info_from_api';
 import showVideo from './modules/scripts/show_video';
@@ -60,7 +60,7 @@ document.addEventListener('click', (event) => showSmallPopup(event));
 if (cases_container !== null) {
     cases_container.addEventListener('click', (event) => { showVideo(event); });
 }
-setInterval(() => { aboutUsSlider(); }, 3000);
+// setInterval(() => {aboutUsSlider()}, 3000);
 if (phone_inp !== null) {
     phone_inp.addEventListener('input', (event) => { validatePhone(event.target); });
 }

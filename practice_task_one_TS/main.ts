@@ -1,3 +1,6 @@
+import Swiper from './node_modules/swiper/types/swiper-class.d';
+import 'swiper/css/bundle';
+
 import './styles/reset.css';
 import './styles/main.css';
 
@@ -79,7 +82,7 @@ if (cases_container !== null) {
     cases_container.addEventListener('click', (event: MouseEvent) => {showVideo(event)})
 }
 
-setInterval(() => {aboutUsSlider()}, 3000);
+// setInterval(() => {aboutUsSlider()}, 3000);
 
 if (phone_inp !== null) {
     phone_inp.addEventListener('input', (event) => {validatePhone(<HTMLInputElement>event.target)});

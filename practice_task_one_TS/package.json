@@ -13,6 +13,12 @@
   },
   "dependencies": {
     "react": "^18.2.0",
+    "swiper": "^10.0.4",
     "typescript": "^5.1.6"
-  }
+  },
+  "main": "main.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
