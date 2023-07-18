@@ -45,8 +45,7 @@ document.querySelector('.clients_slider_arrow__left')!.addEventListener('click',
 
 // RATES EVENT LISTENERS
 
-editCardsContainer();
-window.addEventListener('resize', () => {editCardsContainer});
+window.addEventListener('resize', () => editCardsContainer());
 document.querySelector('.rates_buttons')!.addEventListener('click', (event) => cardsSlider(event));
 
 document.addEventListener('click', (event) => {

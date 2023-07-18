@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let competentions = `
 <section class = "competentions" id = "competentions">
   <h2 class = "competentions_title">Наши компетенции</h2>
@@ -39,4 +37,4 @@ let competentions = `
   </div>
 </section>
 `;
-exports.default = competentions;
+export default competentions;

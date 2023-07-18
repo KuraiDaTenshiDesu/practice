@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let head_menu = `
 <aside class = "head-menu">
   <img src = "./img/logo.svg">
@@ -42,4 +40,4 @@ let head_menu = `
   </nav>
 </div>
 `;
-exports.default = head_menu;
+export default head_menu;

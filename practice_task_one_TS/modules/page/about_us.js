@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let about_us = `
 <section class = "about-us" id = "about-us">
   <h2 class = "about-us_title">О нас</h2>
@@ -42,4 +40,4 @@ let about_us = `
   </div>
 </section>
 `;
-exports.default = about_us;
+export default about_us;

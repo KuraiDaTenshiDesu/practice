@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let benefits = `
   <section class = "benefits">
     <h2 class = "benefits_title">Давайте по-честному</h2>
@@ -32,4 +30,4 @@ let benefits = `
     </div>
   </section>
 `;
-exports.default = benefits;
+export default benefits;

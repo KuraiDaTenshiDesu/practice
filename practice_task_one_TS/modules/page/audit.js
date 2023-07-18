@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let audit = `
 <section class = "audit">
   <div class = "audit_container">
@@ -15,4 +13,4 @@ let audit = `
   <img class = "audit_img" src = "./img/audit_img.png">
 </section>
 `;
-exports.default = audit;
+export default audit;

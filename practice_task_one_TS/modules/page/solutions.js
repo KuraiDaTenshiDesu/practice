@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let solutions = `
 <section class = "solutions">
   <h2 class = "solutions_title">Наши решения для Битрикс24</h2>
@@ -16,4 +14,4 @@ let solutions = `
   <img class = "solutions_bg" src = "./img/solutions_bg.png">
 </section>
 `;
-exports.default = solutions;
+export default solutions;

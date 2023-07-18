@@ -8,12 +8,9 @@ let slides_on_page: number;
 let slide_width: number;
 
 window.addEventListener('DOMContentLoaded',() => {
-  slides = <NodeList>document.querySelectorAll('.clients_client');
-  length = slides.length;
   current = 0;
   slider = <HTMLElement>document.querySelector('.clients_slider_container');
   slides_on_page = getSliderRows();
-  slide_width = (slides[0] as HTMLElement).offsetWidth;
 
   slider.style.transform = `translate3d(0, 0, 0)`;
 })
@@ -24,6 +21,10 @@ window.addEventListener('resize', () => {
 })
 
 function arrowClick(direction: number) {
+  slides = <NodeList>document.querySelectorAll('.clients_client');
+  length = slides.length;
+  slide_width = (slides[0] as HTMLElement).offsetWidth;
+  
   current += direction;
 
   if (current < 0) {

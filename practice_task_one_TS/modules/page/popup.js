@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let popup = `
 <div class = "popup popup__hidden">
     
@@ -11,4 +9,4 @@ let popup = `
 </form>
 </div>
 `;
-exports.default = popup;
+export default popup;

@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let about_bitrix = `
 <section class = "about-bitrix" id = "about-bitrix">
   <h2 class = "about-bitrix_title">Что такое Битрикс24?</h2>
@@ -89,4 +87,4 @@ let about_bitrix = `
   </div>
 </section>
 `;
-exports.default = about_bitrix;
+export default about_bitrix;

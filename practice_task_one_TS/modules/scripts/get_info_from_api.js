@@ -1,12 +1,11 @@
 function getInfoFromAPI() {
     fetch('https://64b5231ef3dbab5a95c6c5c5.mockapi.io/data')
-    .then(response => response.json())
-    .then(result => {
+        .then(response => response.json())
+        .then(result => {
         let cases = result[0].cases;
         let rates = result[0].rates;
         let clients = result[0].clients;
-
-        cases.forEach(function(element: any, index: number) {
+        cases.forEach(function (element, index) {
             let html = `
                 <div class = "cases_case">
                     <h3 class = "cases_case_title">Кейс № ${index + 1}</h3>
@@ -18,11 +17,9 @@ function getInfoFromAPI() {
                   <iframe src="${element.video_src}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             `;
-
-            document.querySelector('.cases_container')!.innerHTML += html;
-        })
-
-        rates.forEach(function(element: any) {
+            document.querySelector('.cases_container').innerHTML += html;
+        });
+        rates.forEach(function (element) {
             let html = `
                 <div class = "rates_card-wrapper">
                     <div class = "rates_card">
@@ -43,24 +40,18 @@ function getInfoFromAPI() {
                     </div>
                 </div>
             `;
-            
-            document.querySelector('.rates_cards')!.innerHTML += html;
-        }) 
-
-        clients.forEach(function(element: any) {
+            document.querySelector('.rates_cards').innerHTML += html;
+        });
+        clients.forEach(function (element) {
             console.log(element);
-
             let html = `
                 <div class = "clients_client">
                     <img src = "${element.img_src}" alt = "client-${element.name}">
                 </div>
             `;
-
-            document.querySelector('.clients_slider_container')!.innerHTML += html;
-        })
-
+            document.querySelector('.clients_slider_container').innerHTML += html;
+        });
         return result;
-    })
+    });
 }
-
 export default getInfoFromAPI;

@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let footer = `
 <footer class = "footer">
   <div class = "footer_content">
@@ -42,4 +40,4 @@ let footer = `
   </div>
 </footer>
 `;
-exports.default = footer;
+export default footer;

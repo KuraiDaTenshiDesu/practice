@@ -1,17 +1,10 @@
-let service_button: HTMLElement | null;
-let integration_button: HTMLElement | null;
-let cards_container: HTMLElement | null;
-let card_wrap: HTMLElement | null;
-
-window.addEventListener('DOMContentLoaded', () => {
-    service_button = <HTMLElement>document.getElementById("service-button");
-    integration_button = <HTMLElement>document.getElementById("integration-button");
-
-    cards_container = <HTMLElement>document.querySelector('.rates_cards');
-    card_wrap = <HTMLElement>document.querySelector('.rates_card-wrapper');
-})
-
 function cardsSlider(event: Event) {
+    let service_button = <HTMLElement>document.getElementById("service-button");
+    let integration_button = <HTMLElement>document.getElementById("integration-button");
+
+    let cards_container = <HTMLElement>document.querySelector('.rates_cards');
+    let card_wrap = <HTMLElement>document.querySelector('.rates_card-wrapper');
+
     if (window.screen.width <= 799) {
         if (event.target === service_button) {
                 integration_button!.classList.remove("rates_button_active");
