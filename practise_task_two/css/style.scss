@@ -5,6 +5,7 @@
 
     --color-light-gray: #e3dac9;
     --color-light-green: #ddffcc;
+    --color-light-red: #ff7377;
 
     --color-white: #fff;
     --color-black: #000;
@@ -56,21 +57,45 @@ body {
         text-align: center;
     }
 
-    &_add-task {
-        font-size: var(--font-size-small);
-        font-family: var(--font-bad-script);
-
-        border: 0;
-        outline: 0;
-
-        border-bottom: 3px solid var(--color-black);
-        
-        display: block;
+    &_add-task{
+        position: relative;
         width: 60%;
         margin: 0 auto;
 
-        padding: var(--spacing-small) var(--spacing-medium);
+        &-input {
+            font-size: var(--font-size-small);
+            font-family: var(--font-bad-script);
+    
+            border: 0;
+            outline: 0;
+    
+            border-bottom: 3px solid var(--color-black);
+            
+            display: block;
+            width: 100%;
+    
+            padding: var(--spacing-small) var(--spacing-medium);
+        }
+
+        &-button {
+            display: block;
+            position: absolute;
+
+            top: 50%;
+            right: var(--spacing-extra-small);
+
+            transform: translate(0, -50%);
+    
+            cursor: pointer;
+    
+            width: 25px;
+            height: 25px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url('../img/buttons_icons/add_icon.png');
+        }
     }
+    
 }
 
 .tasks-container {
@@ -140,5 +165,138 @@ body {
             right: var(--spacing-small);
             background-image: url('../img/buttons_icons/remove_icon.png');
         }
+    }
+}
+
+.delete-task-container {
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: rgba($color: #000000, $alpha: 0.5);
+
+    &__active {
+        display: flex;
+    }
+}
+
+.delete-task-popup {
+    width: 15%;
+    height: 15vh;
+
+    background: var(--color-white);
+    border-radius: var(--radius-small);
+
+    &_title {
+        font-size: var(--font-size-small);
+        font-family: var(--font-bad-script);
+        text-align: center;
+
+        margin: var(--spacing-small);
+    }
+
+    &_buttons {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &_button {
+        width: 35%;
+
+        text-align: center;
+        font-size: var(--font-size-extra-small);
+        font-family: var(--font-bad-script);
+
+        padding: var(--spacing-small) 0;
+
+        border: 3px solid var(--color-black);
+        border-radius: var(--radius-small);
+
+        cursor: pointer;
+
+        &__yes {
+            background: var(--color-light-red);
+        }
+
+        &__no {
+            background: var(--color-light-green);
+        }
+    }
+}
+
+.rename-task-container {
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: rgba($color: #000000, $alpha: 0.5);
+
+    &__active {
+        display: flex;
+    }
+}
+
+.rename-task-popup {
+    width: 15%;
+    height: 20vh;
+
+    background: var(--color-white);
+    border-radius: var(--radius-small);
+
+    &_title {
+        font-size: var(--font-size-small);
+        font-family: var(--font-bad-script);
+        text-align: center;
+
+        margin: var(--spacing-small);
+    }
+
+    &_input {
+        font-size: var(--font-size-small);
+        font-family: var(--font-bad-script);
+
+        border: 0;
+        outline: 0;
+
+        border-bottom: 3px solid var(--color-black);
+        
+        display: block;
+        width: 70%;
+        margin: var(--spacing-small) auto;
+
+        padding: var(--spacing-extra-small) var(--spacing-small);   
+    }
+
+    &_button {
+        width: 35%;
+        display: block;
+        margin: 0 auto;
+
+        text-align: center;
+        font-size: var(--font-size-extra-small);
+        font-family: var(--font-bad-script);
+
+        padding: var(--spacing-extra-small) 0;
+
+        border: 3px solid var(--color-black);
+        border-radius: var(--radius-small);
+
+        cursor: pointer;
     }
 }
