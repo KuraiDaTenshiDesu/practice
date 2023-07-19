@@ -44,12 +44,14 @@ function getInfoFromAPI() {
         });
         clients.forEach(function (element) {
             let html = `
-                <div class = "clients_client">
+                <div class = "clients_client swiper-slide">
                     <img src = "${element.img_src}" alt = "client-${element.name}">
                 </div>
             `;
             document.querySelector('.clients_slider_container').innerHTML += html;
         });
+        // initClientsSlider();
+        console.log('done');
         return result;
     });
 }

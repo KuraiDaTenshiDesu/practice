@@ -130,12 +130,6 @@
         }
     }
 
-    .clients {
-        &_client {
-            flex: 0 0 33.33%;
-        }
-    }
-
     .about-bitrix {
         &_container {
             grid-template-columns: repeat(2, 1fr);
@@ -372,10 +366,6 @@
     .clients {
         &_title {
             font-size: 40px;
-        }
-
-        &_client {
-            flex: 0 0 33.33%;
         }
     }
 
@@ -870,10 +860,6 @@
             width: 90%;
             margin: 0 auto;
             margin-bottom: 50px;
-        }
-
-        &_client {
-            flex: 0 0 50%;
         }
     }
 
@@ -1503,10 +1489,6 @@
             width: 90%;
             margin: 0 auto;
             margin-bottom: 50px;
-        }
-
-        &_client {
-            flex: 0 0 100%;
         }
     }
 
@@ -2152,7 +2134,6 @@
         }
 
         &_client {
-            flex: 0 0 100%;
             min-width: 200px;
         }
     }

@@ -1,3 +1,5 @@
+import initClientsSlider from "./init_clients_slider";
+
 function getInfoFromAPI(): void {
     interface ICase {
         readonly title: string;
@@ -80,6 +82,10 @@ function getInfoFromAPI(): void {
 
             document.querySelector('.clients_slider_container')!.innerHTML += html;
         })
+
+        // initClientsSlider();
+        console.log('done');
+        
 
         return result;
     })

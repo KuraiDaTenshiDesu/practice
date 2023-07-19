@@ -1,5 +1,5 @@
-import Swiper from './node_modules/swiper/types/swiper-class.d';
-import 'swiper/css/bundle';
+// import Swiper from './node_modules/swiper/swiper';
+// import 'swiper/css/bundle';
 
 import './styles/reset.css';
 import './styles/main.css';
@@ -33,14 +33,17 @@ import aboutUsSlider from './modules/scripts/about_us_slider';
 import validatePhone from './modules/scripts/validate_phone';
 import getInfoFromAPI from './modules/scripts/get_info_from_api';
 import showVideo from './modules/scripts/show_video';
-
-getInfoFromAPI();
+import initAboutUsSlider from './modules/scripts/init_about_us_slider';
+import initClientsSlider from './modules/scripts/init_clients_slider';
 
 let app_container: HTMLElement | null = document.querySelector('#app');
 
 if (app_container !== null) {
     app_container.innerHTML = app;
 }
+
+getInfoFromAPI();
+initAboutUsSlider();
 
 showCurrentYear();
 
@@ -65,12 +68,13 @@ if (head_menu_nav !== null)  {
     head_menu_nav.addEventListener('click', (event) => closePopup(event));
 }
 
-if (slider_arrow_left !== null && slider_arrow_right !== null) {
-    slider_arrow_right.addEventListener('click', () => arrowClick(1));
-    slider_arrow_left.addEventListener('click', () => arrowClick(-1));
-}
+// if (slider_arrow_left !== null && slider_arrow_right !== null) {
+//     slider_arrow_right.addEventListener('click', () => arrowClick(1));
+//     slider_arrow_left.addEventListener('click', () => arrowClick(-1));
+// }
 
 window.addEventListener('resize', () => editCardsContainer());
+window.addEventListener('resize', () => initClientsSlider());
 
 if (rates_btns !== null) {
     rates_btns.addEventListener('click', (event) => cardsSlider(event));

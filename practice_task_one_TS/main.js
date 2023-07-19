@@ -1,4 +1,5 @@
-import 'swiper/css/bundle';
+// import Swiper from './node_modules/swiper/swiper';
+// import 'swiper/css/bundle';
 import './styles/reset.css';
 import './styles/main.css';
 import './styles/about-bitrix.css';
@@ -17,7 +18,6 @@ import './styles/solutions.css';
 import './styles/welcome.css';
 import './styles/media.css';
 import app from './modules/app';
-import arrowClick from './modules/scripts/clients_slider';
 import showHeadMenuPopup from './modules/scripts/show_head_menu_popup';
 import showSmallPopup from './modules/scripts/show_small_popup';
 import closePopup from './modules/scripts/close_popup';
@@ -28,11 +28,14 @@ import closePopups from './modules/scripts/close_popups';
 import validatePhone from './modules/scripts/validate_phone';
 import getInfoFromAPI from './modules/scripts/get_info_from_api';
 import showVideo from './modules/scripts/show_video';
-getInfoFromAPI();
+import initAboutUsSlider from './modules/scripts/init_about_us_slider';
+import initClientsSlider from './modules/scripts/init_clients_slider';
 let app_container = document.querySelector('#app');
 if (app_container !== null) {
     app_container.innerHTML = app;
 }
+getInfoFromAPI();
+initAboutUsSlider();
 showCurrentYear();
 let menu_btn = document.getElementById("menu-btn");
 let head_menu_nav = document.querySelector('.head-menu_popup_nav_list');
@@ -48,11 +51,12 @@ if (menu_btn !== null) {
 if (head_menu_nav !== null) {
     head_menu_nav.addEventListener('click', (event) => closePopup(event));
 }
-if (slider_arrow_left !== null && slider_arrow_right !== null) {
-    slider_arrow_right.addEventListener('click', () => arrowClick(1));
-    slider_arrow_left.addEventListener('click', () => arrowClick(-1));
-}
+// if (slider_arrow_left !== null && slider_arrow_right !== null) {
+//     slider_arrow_right.addEventListener('click', () => arrowClick(1));
+//     slider_arrow_left.addEventListener('click', () => arrowClick(-1));
+// }
 window.addEventListener('resize', () => editCardsContainer());
+window.addEventListener('resize', () => initClientsSlider());
 if (rates_btns !== null) {
     rates_btns.addEventListener('click', (event) => cardsSlider(event));
 }
