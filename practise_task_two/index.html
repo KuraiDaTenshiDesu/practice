@@ -13,21 +13,22 @@
     <main class="app">
         <h1 class="app_header">To-Do List</h1>
 
+        <p class="error"></p>
+
         <div class="app_add-task">
             <input type="text" name="add-task" id="add-task" class="app_add-task-input" placeholder="Type your task here and then press 'Enter'">
             <a class="app_add-task-button"></a>
         </div>
 
         <div class="tasks-container">
-        </div>
-
-        <div class="delete-task-container">
-            <div class="delete-task-popup">
-                <h2 class="delete-task-popup_title">Are you sure?</h2>
-                <div class="delete-task-popup_buttons">
-                    <button class="delete-task-popup_button delete-task-popup_button__yes">Yes</button>
-                    <button class="delete-task-popup_button delete-task-popup_button__no">No</button>
-                </div>
+            <div class="tasks-container_col tasks-available">
+                <h2 class="tasks-container_title">Available Tasks:</h2>
+            </div>
+            <div class="tasks-container_col tasks-current">
+                <h2 class="tasks-container_title">Current Task:</h2>
+            </div>
+            <div class="tasks-container_col tasks-done">
+                <h2 class="tasks-container_title">Finished Tasks:</h2>
             </div>
         </div>
 
@@ -35,7 +36,6 @@
             <div class="rename-task-popup">
                 <h2 class="rename-task-popup_title">Type new task name</h2>
                 <input type="text" name="rename-task" id="rename-task" class="rename-task-popup_input">
-                <button class="rename-task-popup_button">Confirm</button>
             </div>
         </div>
 
