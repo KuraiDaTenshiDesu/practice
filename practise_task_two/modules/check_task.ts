@@ -14,17 +14,6 @@ function checkTask(task: ITask, task_element: HTMLElement): void {
         tasks_current.removeChild(task_element);
     }
 
-    if (task.type === 'done') {
-        if (tasks_available && tasks_done) {
-            task.type = 'available';
-            task_element.classList.remove('task_current');
-            task_element.classList.remove('task_done');
-            tasks_done.removeChild(task_element);
-            tasks_available.append(task_element);
-            return; 
-        }
-    };
-
     if (tasks_done) {
         task.type = 'done';
         task_element.classList.remove('task_current');

@@ -1,10 +1,15 @@
 import { ITask } from "./task_interface";
 import { key_available, key_current, key_done, min_letters } from "./constants.js";
+import isTaskNameFree from "./is_task_name_free.js";
+import showError from "./show_error.js";
 
-function renameTaskInStorage(task: ITask, name: string): void {
+function renameTaskInStorage(task: ITask, task_element: HTMLElement, name: string): void {
     let tasks_available = localStorage.getItem(key_available);
     let tasks_done = localStorage.getItem(key_done);
     let tasks_current = localStorage.getItem(key_current);
+
+    let task_element_title = task_element.querySelector('.task_name');
+    task.title = name;
 
     if (tasks_available && tasks_done && tasks_current) {
         let tasks_available_parsed: Array<ITask> = JSON.parse(tasks_available);
@@ -19,7 +24,8 @@ function renameTaskInStorage(task: ITask, name: string): void {
         let task_done_index = tasks_done_names.indexOf(task.title);
         let task_current_index = tasks_current_names.indexOf(task.title);
 
-        if (task_available_index !== -1) {
+        if (task_available_index !== -1 && isTaskNameFree(name) && task_element_title) {
+            task_element_title.innerHTML = name;
             tasks_available_parsed[task_available_index].title = name;
             tasks_available_parsed[task_available_index].html =  `
                 <div class="task task-${tasks_available_parsed[task_available_index].type}">
@@ -36,7 +42,8 @@ function renameTaskInStorage(task: ITask, name: string): void {
             return;
         }
 
-        if (task_done_index !== -1) {
+        if (task_done_index !== -1 && isTaskNameFree(name) && task_element_title) {
+            task_element_title.innerHTML = name;
             tasks_done_parsed[task_done_index].title = name;
             tasks_done_parsed[task_done_index].html =  `
                 <div class="task task-${tasks_done_parsed[task_done_index].type}">
@@ -52,7 +59,8 @@ function renameTaskInStorage(task: ITask, name: string): void {
             return;
         }
 
-        if (task_current_index !== -1) {
+        if (task_current_index !== -1 && isTaskNameFree(name) && task_element_title) {
+            task_element_title.innerHTML = name;
             tasks_current_parsed[task_current_index].title = name;
             tasks_current_parsed[task_current_index].html =  `
                 <div class="task task-${tasks_current_parsed[task_current_index].type}">
@@ -67,6 +75,8 @@ function renameTaskInStorage(task: ITask, name: string): void {
             localStorage.setItem(key_available, JSON.stringify(tasks_current_parsed))
             return;
         }
+
+        showError('Task name should be unique');
     }
 }
 
