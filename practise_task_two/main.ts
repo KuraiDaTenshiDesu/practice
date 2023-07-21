@@ -311,8 +311,8 @@ function moveTasksInStorage(task: ITask): void {
         let tasks_done_names = tasks_done_parsed.map((task) => {return task.title});
 
         task_available_index = tasks_available_names.indexOf(task.title);
-        task_done_index = tasks_current_names.indexOf(task.title);
-        task_current_index = tasks_done_names.indexOf(task.title);
+        task_current_index = tasks_current_names.indexOf(task.title);
+        task_done_index = tasks_done_names.indexOf(task.title);
 
         console.log(task_available_index);
         console.log(task_current_index);
