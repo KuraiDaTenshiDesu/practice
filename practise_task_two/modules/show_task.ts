@@ -15,12 +15,10 @@ function showTask(task: ITask): void {
     }
 
     if (task.type === 'current' && tasks_current) {
-        task_element.classList.add('task_current');
         tasks_current.append(task_element);
     }
 
     if (task.type === 'done' && tasks_done) {
-        task_element.classList.add('task_done');
         tasks_done.append(task_element);
     }
 }

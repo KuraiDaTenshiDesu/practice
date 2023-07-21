@@ -13,14 +13,8 @@ function doTask(task: ITask, task_element: HTMLElement): void {
         if (task.type === 'current' && tasks_available) {
             task.type = 'available';
             task.html = `
-                <div class="task task-${task.type}">
-                    <h2 class="task_name">${task.title}</h2>
-                    <p class="task_date">${task.date}</p>
-                    <p class="task_do">Start Task</p>
-
-                    <a class="task_button task_button__edit"></a>
-                    <a class="task_button task_button__done"></a>
-                    <a class="task_button task_button__remove"></a>
+                <div class="task task_${task.type}">
+                ${task_element.innerHTML}
                 </div>
             `;
             task_element.classList.remove('task_done');
@@ -28,6 +22,9 @@ function doTask(task: ITask, task_element: HTMLElement): void {
             tasks_current.removeChild(task_element);
             task_do_button.innerHTML = 'Start Task';
             tasks_available.append(task_element);
+            task.timer = TaskTimer.getTime();
+            console.log(task.timer);
+            
             TaskTimer.stopTimer();
         } else if (tasks_current.childElementCount <= 1) {
 
@@ -38,14 +35,8 @@ function doTask(task: ITask, task_element: HTMLElement): void {
             if (tasks_current && task_time) {
                 task.type = 'current';
                 task.html = `
-                    <div class="task task-${task.type}">
-                        <h2 class="task_name">${task.title}</h2>
-                        <p class="task_date">${task.date}</p>
-                        <p class="task_do">Return Task</p>
-    
-                        <a class="task_button task_button__edit"></a>
-                        <a class="task_button task_button__done"></a>
-                        <a class="task_button task_button__remove"></a>
+                    <div class="task task_${task.type}">
+                        ${task_element.innerHTML}
                     </div>
                 `;
                 task_element.classList.remove('task_done');

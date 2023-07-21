@@ -10,6 +10,7 @@ var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (
     return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
 };
 var _a, _TaskTimer_seconds, _TaskTimer_minutes, _TaskTimer_hours;
+import { key_current } from "./constants.js";
 class TaskTimer {
     static startTimer() {
         let timer = setInterval(() => {
@@ -17,11 +18,11 @@ class TaskTimer {
             let seconds_string;
             let minutes_string;
             __classPrivateFieldSet(this, _a, (_b = __classPrivateFieldGet(this, _a, "f", _TaskTimer_seconds), _b++, _b), "f", _TaskTimer_seconds);
-            if (__classPrivateFieldGet(this, _a, "f", _TaskTimer_seconds) > 60) {
+            if (__classPrivateFieldGet(this, _a, "f", _TaskTimer_seconds) >= 60) {
                 __classPrivateFieldSet(this, _a, (_c = __classPrivateFieldGet(this, _a, "f", _TaskTimer_minutes), _c++, _c), "f", _TaskTimer_minutes);
                 __classPrivateFieldSet(this, _a, 0, "f", _TaskTimer_seconds);
             }
-            if (__classPrivateFieldGet(this, _a, "f", _TaskTimer_minutes) > 60) {
+            if (__classPrivateFieldGet(this, _a, "f", _TaskTimer_minutes) >= 60) {
                 __classPrivateFieldSet(this, _a, (_d = __classPrivateFieldGet(this, _a, "f", _TaskTimer_hours), _d++, _d), "f", _TaskTimer_hours);
                 __classPrivateFieldSet(this, _a, 0, "f", _TaskTimer_minutes);
             }
@@ -42,6 +43,7 @@ class TaskTimer {
             if (timer_container) {
                 timer_container.innerHTML = time;
             }
+            this.saveTimer();
         }, 1000);
         this.time = timer;
     }
@@ -66,6 +68,36 @@ class TaskTimer {
         __classPrivateFieldSet(this, _a, time.hours, "f", _TaskTimer_hours);
         __classPrivateFieldSet(this, _a, time.minutes, "f", _TaskTimer_minutes);
         __classPrivateFieldSet(this, _a, time.seconds, "f", _TaskTimer_seconds);
+    }
+    static getTimeString(timer) {
+        let seconds_string;
+        let minutes_string;
+        if (timer.seconds < 10) {
+            seconds_string = `0${timer.seconds}`;
+        }
+        else {
+            seconds_string = `${timer.seconds}`;
+        }
+        if (timer.minutes < 10) {
+            minutes_string = `0${timer.minutes}`;
+        }
+        else {
+            minutes_string = `${timer.minutes}`;
+        }
+        let time = `${timer.hours}:${minutes_string}:${seconds_string}`;
+        return time;
+    }
+    static getMinutes(timer) {
+        let minutes = timer.hours * 60 + timer.minutes + timer.seconds / 60;
+        return minutes;
+    }
+    static saveTimer() {
+        let current = localStorage.getItem(key_current);
+        if (current) {
+            let current_parsed = JSON.parse(current);
+            current_parsed[0].timer = this.getTime();
+            localStorage.setItem(key_current, JSON.stringify(current_parsed));
+        }
     }
 }
 _a = TaskTimer;

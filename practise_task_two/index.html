@@ -20,6 +20,18 @@
             <a class="app_add-task-button"></a>
         </div>
 
+        <label class="app_sort_done">
+            Sort:
+            <select>
+                <option value="name-fwd">By Name [Forward]</option>
+                <option value="name-bwd">By Name [Backward]</option>
+                <option value="date-fwd">By Date Added [Forward]</option>
+                <option value="date-bwd">By Date Added [Backward]</option>
+                <option value="fin-fwd">By Finished Time [Forward]</option>
+                <option value="fin-bwd">By Finished Time [Backward]</option>
+            </select>
+        </label>
+
         <div class="tasks-container">
             <div class="tasks-container_col tasks-available">
                 <h2 class="tasks-container_title">Available Tasks:</h2>
@@ -29,6 +41,13 @@
             </div>
             <div class="tasks-container_col tasks-done">
                 <h2 class="tasks-container_title">Finished Tasks:</h2>
+            </div>
+        </div>
+
+        <div class="add-task-props-container">
+            <div class="add-task-props-popup">
+                <h2 class="add-task-props-popup_title">Add limit time to finish task in minutes (0 to no-limit)</h2>
+                <input type="number" min="0" name="add-task-props" id="add-task-props" class="add-task-props-popup_input">
             </div>
         </div>
 

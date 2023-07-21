@@ -2,22 +2,25 @@ import getDateString from "./get_date_string.js";
 import moveTasksInStorage from "./move_tasks_in_storage.js";
 import showError from "./show_error.js";
 import isTaskNameFree from "./is_task_name_free.js";
-function getTask(name, type) {
+function getTask(name, type, time) {
     let date = getDateString();
     if (isTaskNameFree(name)) {
         let task = {
             title: name,
             date: date,
+            added: new Date(),
             type,
+            time,
             timer: {
                 hours: 0,
                 minutes: 0,
                 seconds: 0
             },
             html: `
-                <div class="task task-${type}">
+                <div class="task task_${type}">
                     <h2 class="task_name">${name}</h2>
                     <p class="task_date">${date}</p>
+                    <p class="task_time">Time to finish task: ${time} minutes</p>
                     <p class="task_do">Start Task</p>
     
                     <a class="task_button task_button__edit"></a>
@@ -26,6 +29,19 @@ function getTask(name, type) {
                 </div>
             `,
         };
+        if (time === 0) {
+            task.html = `
+                <div class="task task_${type}">
+                    <h2 class="task_name">${name}</h2>
+                    <p class="task_date">${date}</p>
+                    <p class="task_do">Start Task</p>
+    
+                    <a class="task_button task_button__edit"></a>
+                    <a class="task_button task_button__done"></a>
+                    <a class="task_button task_button__remove"></a>
+                </div>
+            `;
+        }
         moveTasksInStorage(task);
         return task;
     }

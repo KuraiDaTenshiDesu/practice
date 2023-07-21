@@ -9,7 +9,6 @@ function renameTaskInStorage(task: ITask, task_element: HTMLElement, name: strin
     let tasks_current = localStorage.getItem(key_current);
 
     let task_element_title = task_element.querySelector('.task_name');
-    task.title = name;
 
     if (tasks_available && tasks_done && tasks_current) {
         let tasks_available_parsed: Array<ITask> = JSON.parse(tasks_available);
@@ -24,17 +23,15 @@ function renameTaskInStorage(task: ITask, task_element: HTMLElement, name: strin
         let task_done_index = tasks_done_names.indexOf(task.title);
         let task_current_index = tasks_current_names.indexOf(task.title);
 
+        console.log(tasks_available_names);
+
         if (task_available_index !== -1 && isTaskNameFree(name) && task_element_title) {
+            task.title = name;
             task_element_title.innerHTML = name;
             tasks_available_parsed[task_available_index].title = name;
             tasks_available_parsed[task_available_index].html =  `
-                <div class="task task-${tasks_available_parsed[task_available_index].type}">
-                    <h2 class="task_name">${tasks_available_parsed[task_available_index].title}</h2>
-                    <p class="task_date">${tasks_available_parsed[task_available_index].date}</p>
-    
-                    <a class="task_button task_button__edit"></a>
-                    <a class="task_button task_button__done"></a>
-                    <a class="task_button task_button__remove"></a>
+                <div class="task task_${tasks_available_parsed[task_available_index].type}">
+                    ${task_element.innerHTML};
                 </div>
             `,
 
@@ -43,16 +40,12 @@ function renameTaskInStorage(task: ITask, task_element: HTMLElement, name: strin
         }
 
         if (task_done_index !== -1 && isTaskNameFree(name) && task_element_title) {
+            task.title = name;
             task_element_title.innerHTML = name;
             tasks_done_parsed[task_done_index].title = name;
             tasks_done_parsed[task_done_index].html =  `
-                <div class="task task-${tasks_done_parsed[task_done_index].type}">
-                    <h2 class="task_name">${tasks_done_parsed[task_done_index].title}</h2>
-                    <p class="task_date">${tasks_done_parsed[task_done_index].date}</p>
-    
-                    <a class="task_button task_button__edit"></a>
-                    <a class="task_button task_button__done"></a>
-                    <a class="task_button task_button__remove"></a>
+                <div class="task task_${tasks_done_parsed[task_done_index].type}">
+                    ${task_element.innerHTML};
                 </div>
             `,
             localStorage.setItem(key_done, JSON.stringify(tasks_done_parsed))
@@ -60,16 +53,12 @@ function renameTaskInStorage(task: ITask, task_element: HTMLElement, name: strin
         }
 
         if (task_current_index !== -1 && isTaskNameFree(name) && task_element_title) {
+            task.title = name;
             task_element_title.innerHTML = name;
             tasks_current_parsed[task_current_index].title = name;
             tasks_current_parsed[task_current_index].html =  `
-                <div class="task task-${tasks_current_parsed[task_current_index].type}">
-                    <h2 class="task_name">${tasks_current_parsed[task_current_index].title}</h2>
-                    <p class="task_date">${tasks_current_parsed[task_current_index].date}</p>
-    
-                    <a class="task_button task_button__edit"></a>
-                    <a class="task_button task_button__done"></a>
-                    <a class="task_button task_button__remove"></a>
+                <div class="task task_${tasks_current_parsed[task_current_index].type}">
+                    ${task_element.innerHTML};
                 </div>
             `,
             localStorage.setItem(key_available, JSON.stringify(tasks_current_parsed))

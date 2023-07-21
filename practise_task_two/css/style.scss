@@ -50,6 +50,8 @@ body {
 
     border-radius: var(--radius-medium);
 
+    position: relative;
+
     padding: var(--spacing-large) var(--spacing-medium);
 
     &_header {
@@ -95,6 +97,16 @@ body {
             background-repeat: no-repeat;
             background-image: url('../img/buttons_icons/add_icon.png');
         }
+    }
+
+    &_sort_done {
+        font-size: var(--font-size-extra-small);
+        font-family: var(--font-bad-script);
+
+        position: absolute;
+
+        top: var(--spacing-large);
+        right: 0;   
     }
     
 }
@@ -147,6 +159,10 @@ body {
         background: var(--color-light-green);
     }
 
+    &_failed {
+        background: var(--color-light-red) !important;
+    }
+
     &_current {
         background: var(--color-light-blue);
     }
@@ -159,6 +175,13 @@ body {
     }
 
     &_date {
+        font-size: var(--font-size-extra-small);
+        font-family: var(--font-bad-script);
+
+        margin: var(--spacing-small);
+    }
+
+    &_time {
         font-size: var(--font-size-extra-small);
         font-family: var(--font-bad-script);
 
@@ -233,6 +256,74 @@ body {
 
     &_title {
         font-size: var(--font-size-small);
+        font-family: var(--font-bad-script);
+        text-align: center;
+
+        margin: var(--spacing-small);
+    }
+
+    &_input {
+        font-size: var(--font-size-small);
+        font-family: var(--font-bad-script);
+
+        border: 0;
+        outline: 0;
+
+        border-bottom: 3px solid var(--color-black);
+        
+        display: block;
+        width: 70%;
+        margin: var(--spacing-small) auto;
+
+        padding: var(--spacing-extra-small) var(--spacing-small);   
+    }
+
+    &_button {
+        width: 35%;
+        display: block;
+        margin: 0 auto;
+
+        text-align: center;
+        font-size: var(--font-size-extra-small);
+        font-family: var(--font-bad-script);
+
+        padding: var(--spacing-extra-small) 0;
+
+        border: 3px solid var(--color-black);
+        border-radius: var(--radius-small);
+
+        cursor: pointer;
+    }
+}
+
+.add-task-props-container {
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: rgba($color: #000000, $alpha: 0.5);
+
+    &__active {
+        display: flex;
+    }
+}
+
+.add-task-props-popup {
+    width: 15%;
+    height: 20vh;
+
+    background: var(--color-white);
+    border-radius: var(--radius-small);
+
+    &_title {
+        font-size: var(--font-size-extra-small);
         font-family: var(--font-bad-script);
         text-align: center;
 

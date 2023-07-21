@@ -39,6 +39,7 @@ body {
   width: 60%;
   background: var(--color-white);
   border-radius: var(--radius-medium);
+  position: relative;
   padding: var(--spacing-large) var(--spacing-medium);
 }
 .app_header {
@@ -73,6 +74,13 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("../img/buttons_icons/add_icon.png");
+}
+.app_sort_done {
+  font-size: var(--font-size-extra-small);
+  font-family: var(--font-bad-script);
+  position: absolute;
+  top: var(--spacing-large);
+  right: 0;
 }
 
 .tasks-container {
@@ -110,6 +118,9 @@ body {
 .task_done {
   background: var(--color-light-green);
 }
+.task_failed {
+  background: var(--color-light-red) !important;
+}
 .task_current {
   background: var(--color-light-blue);
 }
@@ -119,6 +130,11 @@ body {
   margin: var(--spacing-small);
 }
 .task_date {
+  font-size: var(--font-size-extra-small);
+  font-family: var(--font-bad-script);
+  margin: var(--spacing-small);
+}
+.task_time {
   font-size: var(--font-size-extra-small);
   font-family: var(--font-bad-script);
   margin: var(--spacing-small);
@@ -193,6 +209,57 @@ body {
   padding: var(--spacing-extra-small) var(--spacing-small);
 }
 .rename-task-popup_button {
+  width: 35%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: var(--font-size-extra-small);
+  font-family: var(--font-bad-script);
+  padding: var(--spacing-extra-small) 0;
+  border: 3px solid var(--color-black);
+  border-radius: var(--radius-small);
+  cursor: pointer;
+}
+
+.add-task-props-container {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.add-task-props-container__active {
+  display: flex;
+}
+
+.add-task-props-popup {
+  width: 15%;
+  height: 20vh;
+  background: var(--color-white);
+  border-radius: var(--radius-small);
+}
+.add-task-props-popup_title {
+  font-size: var(--font-size-extra-small);
+  font-family: var(--font-bad-script);
+  text-align: center;
+  margin: var(--spacing-small);
+}
+.add-task-props-popup_input {
+  font-size: var(--font-size-small);
+  font-family: var(--font-bad-script);
+  border: 0;
+  outline: 0;
+  border-bottom: 3px solid var(--color-black);
+  display: block;
+  width: 70%;
+  margin: var(--spacing-small) auto;
+  padding: var(--spacing-extra-small) var(--spacing-small);
+}
+.add-task-props-popup_button {
   width: 35%;
   display: block;
   margin: 0 auto;

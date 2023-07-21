@@ -1,4 +1,6 @@
 import { ITimer } from "./timer_interface";
+import { ITask } from "./task_interface";
+import { key_current } from "./constants.js";
 
 class TaskTimer {
     static #seconds: number = 0;
@@ -14,12 +16,12 @@ class TaskTimer {
 
             this.#seconds++;
 
-            if (this.#seconds > 60) {
+            if (this.#seconds >= 60) {
                 this.#minutes++;
                 this.#seconds = 0;
             }
 
-            if (this.#minutes > 60) {
+            if (this.#minutes >= 60) {
                 this.#hours++;
                 this.#minutes = 0;
             }
@@ -43,6 +45,9 @@ class TaskTimer {
             if (timer_container) {
                 timer_container.innerHTML = time;
             }
+
+            this.saveTimer();
+
         }, 1000);
 
         this.time = timer;
@@ -73,6 +78,42 @@ class TaskTimer {
         this.#hours = time.hours;
         this.#minutes = time.minutes;
         this.#seconds = time.seconds;
+    }
+
+    static getTimeString(timer: ITimer): string {
+        let seconds_string: string;
+        let minutes_string: string;
+
+        if (timer.seconds < 10) {
+            seconds_string = `0${timer.seconds}`;
+        } else {
+            seconds_string = `${timer.seconds}`;
+        }
+
+        if (timer.minutes < 10) {
+            minutes_string = `0${timer.minutes}`;
+        } else {
+            minutes_string = `${timer.minutes}`;
+        }
+
+        let time = `${timer.hours}:${minutes_string}:${seconds_string}`;
+        return time;
+    }
+
+    static getMinutes(timer: ITimer): number {
+        let minutes = timer.hours * 60 + timer.minutes + timer.seconds / 60;
+
+        return minutes;
+    }
+
+    static saveTimer() {
+        let current = localStorage.getItem(key_current);
+        
+        if (current) {
+            let current_parsed: Array<ITask> = JSON.parse(current);
+            current_parsed[0].timer = this.getTime();
+            localStorage.setItem(key_current, JSON.stringify(current_parsed));
+        }
     }
 }
 

@@ -6,4 +6,6 @@ export interface ITask {
     html: string;
     type: "available" | "done" | "current";
     timer: ITimer;
+    added: Date;
+    time: number;
 }

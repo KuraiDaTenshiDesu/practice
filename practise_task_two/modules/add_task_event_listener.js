@@ -28,7 +28,9 @@ function addTaskEventListener(task, task_element) {
                 rename_task.addEventListener('keypress', (event) => {
                     if (event.key === 'Enter') {
                         let value = rename_task.value;
+                        console.log('asas');
                         if (value.length >= min_letters) {
+                            console.log('asas');
                             renameTaskInStorage(task, task_element, value);
                             hideRenamePopup();
                         }
