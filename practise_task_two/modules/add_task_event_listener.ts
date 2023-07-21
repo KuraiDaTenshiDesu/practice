@@ -50,7 +50,7 @@ function addTaskEventListener(task: ITask, task_element: HTMLElement): void {
         })
     }
 
-    let task_do_button = task_element.querySelector('.task_name');
+    let task_do_button = task_element.querySelector('.task_do');
 
     if (task_do_button) {
         task_do_button.addEventListener('click', () => {

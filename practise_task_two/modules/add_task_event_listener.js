@@ -40,7 +40,7 @@ function addTaskEventListener(task, task_element) {
             }
         });
     }
-    let task_do_button = task_element.querySelector('.task_name');
+    let task_do_button = task_element.querySelector('.task_do');
     if (task_do_button) {
         task_do_button.addEventListener('click', () => {
             doTask(task, task_element);

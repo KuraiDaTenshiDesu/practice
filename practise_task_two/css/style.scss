@@ -156,8 +156,6 @@ body {
         font-family: var(--font-bad-script);
 
         margin: var(--spacing-small);
-
-        cursor: pointer;
     }
 
     &_date {
@@ -165,6 +163,15 @@ body {
         font-family: var(--font-bad-script);
 
         margin: var(--spacing-small);
+    }
+
+    &_do {
+        font-size: var(--font-size-extra-small);
+        font-family: var(--font-bad-script);
+
+        margin: var(--spacing-small);
+
+        cursor: pointer;
     }
 
     &_button {

@@ -117,12 +117,17 @@ body {
   font-size: var(--font-size-small);
   font-family: var(--font-bad-script);
   margin: var(--spacing-small);
-  cursor: pointer;
 }
 .task_date {
   font-size: var(--font-size-extra-small);
   font-family: var(--font-bad-script);
   margin: var(--spacing-small);
+}
+.task_do {
+  font-size: var(--font-size-extra-small);
+  font-family: var(--font-bad-script);
+  margin: var(--spacing-small);
+  cursor: pointer;
 }
 .task_button {
   display: block;

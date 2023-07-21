@@ -12,6 +12,7 @@ function getTask(name, type) {
                 <div class="task task-${type}">
                     <h2 class="task_name">${name}</h2>
                     <p class="task_date">${date}</p>
+                    <p class="task_do">Start Task</p>
     
                     <a class="task_button task_button__edit"></a>
                     <a class="task_button task_button__done"></a>
