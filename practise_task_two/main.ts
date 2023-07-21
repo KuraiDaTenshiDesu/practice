@@ -5,7 +5,6 @@ import showTask from "./modules/show_task.js";
 import showError from "./modules/show_error.js";
 import getTasksFromStorage from "./modules/get_tasks_from_storage.js";
 
-
 initTasksStorages();
 
 let add_task_input = <HTMLInputElement> document.getElementById('add-task');

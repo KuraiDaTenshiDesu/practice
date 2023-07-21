@@ -108,7 +108,7 @@ body {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-medium);
+    gap: var(--spacing-small);
 
     overflow-y: scroll;
 

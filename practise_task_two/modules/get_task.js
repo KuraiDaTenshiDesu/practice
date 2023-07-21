@@ -8,6 +8,12 @@ function getTask(name, type) {
         let task = {
             title: name,
             date: date,
+            type,
+            timer: {
+                hours: 0,
+                minutes: 0,
+                seconds: 0
+            },
             html: `
                 <div class="task task-${type}">
                     <h2 class="task_name">${name}</h2>
@@ -19,7 +25,6 @@ function getTask(name, type) {
                     <a class="task_button task_button__remove"></a>
                 </div>
             `,
-            type,
         };
         moveTasksInStorage(task);
         return task;

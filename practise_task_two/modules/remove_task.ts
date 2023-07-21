@@ -1,5 +1,6 @@
 import { ITask } from "./task_interface";
 import deleteTaskFromStorage from "./delete_task_from_storage.js";
+import TaskTimer from "./task_timer.js";
 
 function removeTask(task: ITask, task_element: HTMLElement): void {
     let tasks_available = document.querySelector('.tasks-available');
@@ -16,6 +17,7 @@ function removeTask(task: ITask, task_element: HTMLElement): void {
 
     if (task.type === 'current' && tasks_current) {
         tasks_current.removeChild(task_element);
+        TaskTimer.stopTimer();
     }
 
     deleteTaskFromStorage(task);
