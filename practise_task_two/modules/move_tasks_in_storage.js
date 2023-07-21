@@ -19,9 +19,6 @@ function moveTasksInStorage(task) {
         task_available_index = tasks_available_names.indexOf(task.title);
         task_current_index = tasks_current_names.indexOf(task.title);
         task_done_index = tasks_done_names.indexOf(task.title);
-        console.log(task_available_index);
-        console.log(task_current_index);
-        console.log(task_done_index);
         if (task.type === 'available' && tasks_available && task_available_index === -1) {
             tasks_available_parsed.push(task);
             localStorage.setItem(key_available, JSON.stringify(tasks_available_parsed));

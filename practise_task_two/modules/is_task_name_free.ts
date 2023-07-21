@@ -7,6 +7,7 @@ function isTaskNameFree(name: string): boolean {
     let tasks_current = localStorage.getItem(key_current);
 
     if (tasks_available && tasks_done && tasks_current) {
+        
         let tasks_available_parsed: Array<ITask> = JSON.parse(tasks_available);
         let tasks_done_parsed: Array<ITask> = JSON.parse(tasks_done);
         let tasks_current_parsed: Array<ITask> = JSON.parse(tasks_current);

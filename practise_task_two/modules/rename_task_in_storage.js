@@ -13,9 +13,6 @@ function renameTaskInStorage(task, name) {
         let task_available_index = tasks_available_names.indexOf(task.title);
         let task_done_index = tasks_done_names.indexOf(task.title);
         let task_current_index = tasks_current_names.indexOf(task.title);
-        console.log(task_available_index);
-        console.log(task_done_index);
-        console.log(task_current_index);
         if (task_available_index !== -1) {
             tasks_available_parsed[task_available_index].title = name;
             tasks_available_parsed[task_available_index].html = `
